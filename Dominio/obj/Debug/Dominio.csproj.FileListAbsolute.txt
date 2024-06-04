@@ -1,0 +1,10 @@
+C:\Users\escal\Documents\Dominio y negocio\nuevo\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\escal\Documents\Dominio y negocio\nuevo\Dominio\obj\Debug\Dominio.Form1.resources
+C:\Users\escal\Documents\Dominio y negocio\nuevo\Dominio\obj\Debug\Dominio.Properties.Resources.resources
+C:\Users\escal\Documents\Dominio y negocio\nuevo\Dominio\obj\Debug\Dominio.csproj.GenerateResource.cache
+C:\Users\escal\Documents\Dominio y negocio\nuevo\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\escal\Documents\Dominio y negocio\nuevo\WindowsFormsApp1\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\escal\Documents\Dominio y negocio\nuevo\WindowsFormsApp1\Dominio\obj\Debug\Dominio.Form1.resources
+C:\Users\escal\Documents\Dominio y negocio\nuevo\WindowsFormsApp1\Dominio\obj\Debug\Dominio.Properties.Resources.resources
+C:\Users\escal\Documents\Dominio y negocio\nuevo\WindowsFormsApp1\Dominio\obj\Debug\Dominio.csproj.GenerateResource.cache
+C:\Users\escal\Documents\Dominio y negocio\nuevo\WindowsFormsApp1\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
