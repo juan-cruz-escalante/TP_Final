@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Dominio;
+using Negocio;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Negocio
 {
@@ -13,55 +16,40 @@ namespace Negocio
         public List<Articulos> listar()
         {
             List<Articulos> lista = new List<Articulos>();
-            SqlConnection conexion = new SqlConnection();
-            SqlCommand comando = new SqlCommand();
-            SqlDataReader lector;
-
+            AccesoDatos datos = new AccesoDatos();
 
             try
             {
-                conexion.ConnectionString = "server=.\\SQLLab3; database=TP_Final; integrated security=true";
-                comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "SELECT A.ID,a.nombre, a.Descripcion,C.Nombre,T.Tamano,A.Precio, a.ImagenUrl, a.Disponible  from Articulos A inner join Categoria C On C.ID = A.IdCategoria inner join Tamano T On T.ID = A.IdCategoria";
-                comando.Connection = conexion;
+                datos.setearConsulta("SELECT A.ID, A.Nombre, A.Descripcion, C.Nombre Categoria, T.Tamano, A.Precio, A.ImagenUrl, A.Disponible, T.ID IDTamanio, C.ID IDCategoria FROM Articulos A, Categoria C, Tamano T WHERE A.IdCategoria = C.ID AND A.IdTamano = T.ID");
+                datos.ejecutarLectura();
 
-                conexion.Open();
-                lector = comando.ExecuteReader();
-
-                while (lector.Read())
+                while (datos.Lector.Read())
                 {
                     Articulos aux = new Articulos();
-                    aux.IdArticulo = (int)lector["ID"];
-
-                    if (!(lector["Nombre"] is DBNull))
-                        aux.Nombre = (string)lector["Nombre"];
-
-                    if (!(lector["Descripcion"] is DBNull))
-                        aux.Descripcion = (string)lector["Descripcion"];
-
-                    aux.IdCategoria = (int)lector["IdCategoria"];
+                    aux.IdArticulo = (int)datos.Lector["ID"];
+                    aux.Nombre = (string)datos.Lector["Nombre"];
+                    aux.Descripcion = (string)datos.Lector["Descripcion"];
+                    aux.Tamanio = new Tamano();
+                    aux.Tamanio.Tamanio = (string)datos.Lector["Tamano"];
+                    aux.Tamanio.IdTamanio = (int)datos.Lector["IDTamanio"];
                     aux.Categoria = new Categoria();
-                    if (!(lector["Categoria"] is DBNull))
-                        aux.Categoria.DescripcionCategoria = (string)lector["Categoria"];
-
-                    aux.IdTamanio = (int)lector["Tamano"];
-                    aux.Categoria = new Categoria();
-                    if (!(lector["Tamano"] is DBNull))
-                        aux.Categoria.DescripcionCategoria = (string)lector["Tamano"];
-
-
-                    if (!(lector["Precio"] is DBNull))
-                        aux.Precio = (float)(decimal)lector["Precio"];
+                    aux.Categoria.DescripcionCategoria = (string)datos.Lector["Categoria"];
+                    aux.Categoria.IdCategoria = (int)datos.Lector["IDCategoria"];
+                    aux.Precio = (float)(decimal)datos.Lector["Precio"];
+                    aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
 
                     lista.Add(aux);
                 }
 
-                conexion.Close();
                 return lista;
             }
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
 
         }

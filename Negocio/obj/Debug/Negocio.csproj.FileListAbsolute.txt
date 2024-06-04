@@ -1,8 +1,9 @@
-C:\Users\escal\Documents\Dominio y negocio\nuevo\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
-C:\Users\escal\Documents\Dominio y negocio\nuevo\Negocio\obj\Debug\Negocio.Properties.Resources.resources
-C:\Users\escal\Documents\Dominio y negocio\nuevo\Negocio\obj\Debug\Negocio.csproj.GenerateResource.cache
-C:\Users\escal\Documents\Dominio y negocio\nuevo\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
-C:\Users\escal\Documents\Dominio y negocio\nuevo\WindowsFormsApp1\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
-C:\Users\escal\Documents\Dominio y negocio\nuevo\WindowsFormsApp1\Negocio\obj\Debug\Negocio.Properties.Resources.resources
-C:\Users\escal\Documents\Dominio y negocio\nuevo\WindowsFormsApp1\Negocio\obj\Debug\Negocio.csproj.GenerateResource.cache
-C:\Users\escal\Documents\Dominio y negocio\nuevo\WindowsFormsApp1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\Cosas de Omar\TP_Final\Negocio\bin\Debug\Negocio.dll
+D:\Cosas de Omar\TP_Final\Negocio\bin\Debug\Negocio.pdb
+D:\Cosas de Omar\TP_Final\Negocio\bin\Debug\Dominio.dll
+D:\Cosas de Omar\TP_Final\Negocio\bin\Debug\Dominio.pdb
+D:\Cosas de Omar\TP_Final\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+D:\Cosas de Omar\TP_Final\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\Cosas de Omar\TP_Final\Negocio\obj\Debug\Negocio.csproj.Up2Date
+D:\Cosas de Omar\TP_Final\Negocio\obj\Debug\Negocio.dll
+D:\Cosas de Omar\TP_Final\Negocio\obj\Debug\Negocio.pdb
