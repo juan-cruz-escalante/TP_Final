@@ -23,7 +23,7 @@
                     <a href="/Productos.aspx" class="suave" title="Ver productos"><i class="fa-solid fa-burger"></i>  PRODUCTOS</a>
                     <a href="/Pagina.aspx" class="suave" title="Sobre Nosotros"><i class="fa-solid fa-user"></i>  NOSOTROS</a>
                     <a href="/Pagina.aspx" class="suave" title="Contacto"><i class="fa-solid fa-pen"></i>  CONTACTANOS</a>
-                    <a href="/CarritoDeCompra.aspx" class="suave" title="Ver carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="/CarritoDeCompras.aspx" class="suave" title="Ver carrito"><i class="fa-solid fa-cart-shopping"></i></a>
                 </nav>
             </header>
         </section>

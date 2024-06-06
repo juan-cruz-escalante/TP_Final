@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CarritoDeCompras.aspx" />
     <Content Include="Contenido\estilo.css" />
     <Content Include="Global.asax" />
     <Content Include="Inicio.aspx" />
@@ -74,6 +75,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarritoDeCompras.aspx.cs">
+      <DependentUpon>CarritoDeCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarritoDeCompras.aspx.designer.cs">
+      <DependentUpon>CarritoDeCompras.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
