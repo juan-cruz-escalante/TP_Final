@@ -22,8 +22,8 @@
                     <a href="/Inicio.aspx" class="suave" title="Ir al inicio"><i class="fa-solid fa-house"></i>  INICIO</a>
                     <a href="/Productos.aspx" class="suave" title="Ver productos"><i class="fa-solid fa-burger"></i>  PRODUCTOS</a>
                     <a href="/Pagina.aspx" class="suave" title="Sobre Nosotros"><i class="fa-solid fa-user"></i>  NOSOTROS</a>
-                    <a href="/Pagina.aspx" class="suave" title="Contacto"><i class="fa-solid fa-pen"></i>  CONTACTANOS</a>
-                    <a href="/CarritoDeCompra.aspx" class="suave" title="Ver carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="/Pagina.aspx" class="suave" title="Contacto"><i class="fa-solid fa-pen"></i>CONTACTANOS</a>
+                    <a href="/CarritoDeCompras.aspx" class="suave" title="Ver carrito"><i class="fa-solid fa-cart-shopping"></i></a>
                 </nav>
             </header>
         </section>
@@ -32,9 +32,9 @@
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            <footer>
+            <footer class="footer">
                 <div class="text-center p-3 bg-dark text-white">
-                    © Cruz & Olave
+                    © Escalante & Olave
                 </div>
             </footer>
         </div>

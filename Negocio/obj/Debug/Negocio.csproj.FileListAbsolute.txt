@@ -7,3 +7,30 @@ D:\Cosas de Omar\TP_Final\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cac
 D:\Cosas de Omar\TP_Final\Negocio\obj\Debug\Negocio.csproj.Up2Date
 D:\Cosas de Omar\TP_Final\Negocio\obj\Debug\Negocio.dll
 D:\Cosas de Omar\TP_Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\escal\Desktop\TP_Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\escal\Desktop\TP_Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\escal\Desktop\TP_Final\Negocio\bin\Debug\Dominio.dll
+C:\Users\escal\Desktop\TP_Final\Negocio\bin\Debug\Dominio.pdb
+C:\Users\escal\Desktop\TP_Final\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\escal\Desktop\TP_Final\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\escal\Desktop\TP_Final\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\escal\Desktop\TP_Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\escal\Desktop\TP_Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\escal\Desktop\BackUp TP_Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\escal\Desktop\BackUp TP_Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\escal\Desktop\BackUp TP_Final\Negocio\bin\Debug\Dominio.dll
+C:\Users\escal\Desktop\BackUp TP_Final\Negocio\bin\Debug\Dominio.pdb
+C:\Users\escal\Desktop\BackUp TP_Final\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\escal\Desktop\BackUp TP_Final\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\escal\Desktop\BackUp TP_Final\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\escal\Desktop\BackUp TP_Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\escal\Desktop\BackUp TP_Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\escal\Desktop\BackUp TP_Final - copia\Negocio\bin\Debug\Negocio.dll
+C:\Users\escal\Desktop\BackUp TP_Final - copia\Negocio\bin\Debug\Negocio.pdb
+C:\Users\escal\Desktop\BackUp TP_Final - copia\Negocio\bin\Debug\Dominio.dll
+C:\Users\escal\Desktop\BackUp TP_Final - copia\Negocio\bin\Debug\Dominio.pdb
+C:\Users\escal\Desktop\BackUp TP_Final - copia\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\escal\Desktop\BackUp TP_Final - copia\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\escal\Desktop\BackUp TP_Final - copia\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\escal\Desktop\BackUp TP_Final - copia\Negocio\obj\Debug\Negocio.dll
+C:\Users\escal\Desktop\BackUp TP_Final - copia\Negocio\obj\Debug\Negocio.pdb
