@@ -10,13 +10,10 @@
 }
 
 .fondo-secciones {
-    background-color: #861010;
+    background: linear-gradient(to right, #8e0000, #b10000, #8e0000);
     padding: 0 20px;
 }
 
-.suave {
-    transition: all 0.5s ease;
-}
 
 .centrar {
     text-align: center;
@@ -34,11 +31,11 @@
         border: 12px solid transparent;
         text-transform: uppercase;
         font-size: 18px;
+        transition: all 0.5s ease;
     }
 
         #minimenu nav a:hover {
-            border-bottom: 2px solid #e56e83;
-            font-size: 22px;
+            transform: scale(1.1);
             color: #e56e83;
         }
 
@@ -62,9 +59,21 @@
     }
 
         #minimenu nav a:hover {
-            font-size: 11px;
+            transform: scale(1.1);
         }
 }
+
+.imageButton {
+    width: 80%;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+    .imageButton:hover {
+        transform: scale(1.05);
+    }  
 
 .footer {
     width: 100%;
