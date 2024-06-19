@@ -20,8 +20,11 @@
                     <br />
                     <br />
                     <div class="d-flex justify-content-center">
-                        <asp:Button ID="btnRegistrarse" runat="server" class="btn btn-danger me-2" Text="Registrarse" />
+                        <asp:Button ID="btnRegistrarse" runat="server" OnClick="btnRegistrarse_Click1" class="btn btn-danger me-2" Text="Registrarse" />
+                        <%--                        <asp:Button ID="btnIniciarSesion" runat="server" OnClick="btnIniciarSesion_Click" class="btn btn-danger btn-lg me-2" Text="Iniciar Sesion" />--%>
+                        <%--                        <asp:Button ID="btnRegistrarse" runat="server" OnClick="btnRegistrarse_Click" class="btn btn-danger me-2" Text="Registrarse" />--%>
                         <a href="Inicio.aspx" style="color: red; display: inline-block; padding: 10px 20px; font-size: 16px; text-align: center; text-decoration: none; background-color: #f8f9fa; border: 1px solid red; border-radius: 5px;">Cancelar</a>
+                    </div>
                     <br />
                     <div class="text-center mt-3">
                         <asp:Label ID="lblErrorMail" runat="server" Visible="false" CssClass="text-danger"></asp:Label>

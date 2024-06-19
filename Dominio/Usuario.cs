@@ -24,6 +24,10 @@ namespace Dominio
             Pass = pass;
             TipoUsuario = admin ? TipoUsuario.Admin : TipoUsuario.Normal;
         }
+        public Usuario()
+        {
+
+        }
     }
 
 
