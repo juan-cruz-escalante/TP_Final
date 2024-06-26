@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Negocio
 {
     internal class PersonaNegocio
-    {
+    {/*
         public List<Persona> listar()
         {
             List<Persona> lista = new List<Persona>();
@@ -47,6 +47,6 @@ namespace Negocio
             {
                 datos.cerrarConexion();
             }
-        }
+        }*/
     }
 }

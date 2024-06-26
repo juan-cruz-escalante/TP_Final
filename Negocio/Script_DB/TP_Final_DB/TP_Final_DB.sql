@@ -34,8 +34,3 @@ CREATE TABLE Usuarios(
     Pass varchar(16) not null, 
     TipoUsuario int not null
 )
-create Procedure insertarNuevo
-@user varchar(50),
-@pass varchar(16)
-as
-insert into Usuarios (Usuario, Pass, TipoUsuario) output inserted.ID values (@user, @pass, 0)
