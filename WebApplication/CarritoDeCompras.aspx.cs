@@ -11,22 +11,31 @@ namespace WebApplication
 {
     public partial class CarritoDeCompras : System.Web.UI.Page
     {
-        public List<Articulos> listaArticulos { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Productos"] == null)
+            List<Articulos> Carrito;
+            if (Session["Carrito"] == null)
             {
-                ArticuloNegocio negocio = new ArticuloNegocio();
-                listaArticulos = negocio.listarConSP();
-                Session.Add("Productos", listaArticulos);
+                Session["Carrito"] = new List<Articulos>();
             }
-            dgvArticulos.DataSource = Session["Productos"];
-            dgvArticulos.DataBind();
-        }
-        protected void dgvArticulos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var id = dgvArticulos.SelectedDataKey.Value.ToString();
-            Response.Redirect("CarritoDeCompras.aspx?id=" + id);
+
+            Carrito = (List<Articulos>)Session["Carrito"];
+            if (Request.QueryString["id"] != null && int.TryParse(Request.QueryString["id"], out int id))
+            {
+                if (Session["Productos"] != null)
+                {
+                    List<Articulos> SeccionProductos = (List<Articulos>)Session["Productos"];
+                    Articulos seleccionado = SeccionProductos.Find(x => x.IdArticulo == id);
+
+                    if (seleccionado != null && !Carrito.Any(x => x.IdArticulo == id))
+                    {
+                        Carrito.Add(seleccionado);
+                        Session["Carrito"] = Carrito;
+                    }
+                }
+            }
+            dgvCarrito.DataSource = Carrito;
+            dgvCarrito.DataBind();
         }
     }
 }
