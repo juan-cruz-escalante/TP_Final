@@ -70,6 +70,7 @@
                       <div class="card-body">
                         <h5 class="card-title"><%: art.Nombre %></h5>
                         <p class="card-text">Precio: $<%: art.Precio %></p>
+                        <a href="CarritoDeCompras.aspx?id=<%: art.IdArticulo %>" Class="btn btn-success">Añadir al carrito</a>
                       </div>
                     </div>
                   </div>
