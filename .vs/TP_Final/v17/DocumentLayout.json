@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\MrOmar95\\Desktop\\TP_Final\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|C:\\Users\\MrOmar95\\Desktop\\TP_Final\\negocio\\script_db\\tp_final_db\\tp_final_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|solutionrelative:negocio\\script_db\\tp_final_db\\tp_final_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
@@ -65,6 +66,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|c:\\users\\mromar95\\desktop\\tp_final\\negocio\\script_db\\tp_final_db\\tp_final_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
       "RelativeMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|solutionrelative:negocio\\script_db\\tp_final_db\\tp_final_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+=======
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\webapplication\\registrarse.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\registrarse.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|solutionrelative:negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\negocio\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|solutionrelative:negocio\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D9EAFC8-3AC0-4951-8BC8-52598ECBD005}|Dominio\\Dominio.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\dominio\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D9EAFC8-3AC0-4951-8BC8-52598ECBD005}|Dominio\\Dominio.csproj|solutionrelative:dominio\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 0108c285752e1cf0ac4e65fe2731d5b033015607
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +95,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 9,
+=======
+          "SelectedChildIndex": 5,
+>>>>>>> 0108c285752e1cf0ac4e65fe2731d5b033015607
           "Children": [
             {
               "$type": "Document",
@@ -84,10 +109,15 @@
               "RelativeDocumentMoniker": "Dominio\\Usuario.cs",
               "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\TP_Final\\Dominio\\Usuario.cs",
               "RelativeToolTip": "Dominio\\Usuario.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAABAAAAAAAAAAAAA7wCAAAAAAAAAA",
+=======
+              "ViewState": "AQIAAAIAAAAAAAAAAAAuwCAAAAAAAAAA",
+>>>>>>> 0108c285752e1cf0ac4e65fe2731d5b033015607
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T19:22:25.65Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -193,6 +223,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "TP_Final_DB.sql ",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\TP_Final\\Negocio\\Script_DB\\TP_Final_DB\\TP_Final_DB.sql",
@@ -201,10 +232,22 @@
               "RelativeToolTip": "Negocio\\Script_DB\\TP_Final_DB\\TP_Final_DB.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2024-07-14T20:14:11.924Z",
+=======
+              "DocumentIndex": 3,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\Negocio\\EmailService.cs",
+              "RelativeDocumentMoniker": "Negocio\\EmailService.cs",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\Negocio\\EmailService.cs",
+              "RelativeToolTip": "Negocio\\EmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T20:28:36.903Z",
+>>>>>>> 0108c285752e1cf0ac4e65fe2731d5b033015607
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 12,
               "Title": "IniciarSesion.aspx.cs",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\TP_Final\\WebApplication\\IniciarSesion.aspx.cs",
@@ -218,14 +261,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
+=======
+              "DocumentIndex": 0,
+>>>>>>> 0108c285752e1cf0ac4e65fe2731d5b033015607
               "Title": "Registrarse.aspx.cs",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\TP_Final\\WebApplication\\Registrarse.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Registrarse.aspx.cs",
               "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\TP_Final\\WebApplication\\Registrarse.aspx.cs",
               "RelativeToolTip": "WebApplication\\Registrarse.aspx.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAqwCcAAAAyAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCUAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T15:25:37.918Z"
+              "WhenOpened": "2024-07-14T15:25:37.918Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -237,19 +284,25 @@
               "RelativeToolTip": "WebApplication\\MasterPrincipal.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-14T14:46:43.721Z"
+              "WhenOpened": "2024-07-14T14:46:43.721Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 13,
+=======
+              "DocumentIndex": 1,
+>>>>>>> 0108c285752e1cf0ac4e65fe2731d5b033015607
               "Title": "UsuarioNegocio.cs",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\TP_Final\\Negocio\\UsuarioNegocio.cs",
               "RelativeDocumentMoniker": "Negocio\\UsuarioNegocio.cs",
               "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\TP_Final\\Negocio\\UsuarioNegocio.cs",
               "RelativeToolTip": "Negocio\\UsuarioNegocio.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAqwEwAAAAvAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAqwEwAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T22:36:38.137Z"
+              "WhenOpened": "2024-06-18T22:36:38.137Z",
+              "EditorCaption": ""
             }
           ]
         }
