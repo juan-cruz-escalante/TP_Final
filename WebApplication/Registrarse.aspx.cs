@@ -15,35 +15,36 @@ namespace WebApplication
         {
 
         }
+
         protected void btnRegistrarse_Click(object sender, EventArgs e)
         {
             try
             {
-                Usuario usuario = new Usuario();
-                UsuarioNegocio negocio = new UsuarioNegocio();
-                usuario.User = inputEmail.Text;
-                usuario.Pass = inputPassword.Text;
-                int id = negocio.insertarNuevo(usuario);
-            }
-            catch(Exception ex)
-            {
-                Session.Add("Error", ex.ToString());
-            }
-        }
+                string email = txtEmail.Text;
 
-        protected void btnRegistrarse_Click1(object sender, EventArgs e)
-        {
-            try
-            {
-                Usuario usuario = new Usuario();
+                if (!email.Contains("@") && !email.Contains(".com"))
+                {
+                    lblErrorMail.Text = "No se pudo registrar, correo electrónico inválido";
+                    lblErrorMail.Visible = true;
+                    return;
+                }
+                Usuario user = new Usuario();
                 UsuarioNegocio negocio = new UsuarioNegocio();
-                usuario.User = inputEmail.Text;
-                usuario.Pass = inputPassword.Text;
-                int id = negocio.insertarNuevo(usuario);
+                user.User = email;
+                user.Pass = txtPassword.Text;
+                int id = negocio.insertarNuevo(user);
+
+                if (id > 0)
+                {
+                    lblDatosVacios.Text = "¡Ya estás registrado!";
+                    lblDatosVacios.Visible = true;
+                }
+
             }
             catch (Exception ex)
             {
-                Session.Add("Error", ex.ToString());
+                lblErrorIngreso.Text = "Ocurrió un error al intentar registrarse.";
+                lblErrorIngreso.Visible = true;
             }
         }
     }

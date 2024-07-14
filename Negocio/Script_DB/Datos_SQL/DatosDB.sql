@@ -140,11 +140,11 @@ values
 ('1 docena empanadas de pollo','empanadas de pollo bien caseras',8,2,9500,'https://media.ambito.com/p/03c95dfa7229a700b23ff26d8cd857e5/adjuntos/239/imagenes/040/540/0040540081/empandas-de-pollo-recetasjpg.jpg',1),
 ('1 docena empanadas de j y q','empanadas de jamon y queso bien caseras',8,2,9500,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAnfvtKjxddDRwXnnVHhF8Ggd61qylJFn0g&s',1)
 
-Insert into Usuarios
+Insert into Usuarios (Usuario, Pass, Adm)
 values
-('juancruz@gmail.com', 'admin123', 1)
-('josias@gmail.com', 'admin123', 1)
-('prueba@gmail.com','noesadmin', 2)
+('juancruz@gmail.com', 'admin123', 1),
+('josias@gmail.com', 'admin123', 1),
+('prueba@gmail.com','noesadmin', 0)
 
 ****************************************************************************************************************
 

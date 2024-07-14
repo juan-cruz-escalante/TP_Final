@@ -30,7 +30,22 @@ CREATE TABLE Articulos(
 )
 CREATE TABLE Usuarios(
     ID int not null primary key identity(1,1),
-    Usuario varchar(50) not null unique,
+    Usuario varchar(50) not null UNIQUE
     Pass varchar(16) not null, 
-    TipoUsuario int not null
+    Apellidos varchar(100) null,
+    Nombres varchar(100) null,
+    Nacimiento date null,
+    ImagenUrl varchar (1000) null,
+    Adm bit default(0) NULL
 )
+Create Procedure insertarNuevo
+@user varchar(50),
+@pass varchar(16)
+as
+insert into Usuarios (Usuario, Pass, TipoUsuario) values (@user, @pass, 0)
+
+Insert into Usuarios (Usuario, Pass, Adm)
+values
+('juancruz@gmail.com', 'admin123', 1),
+('josias@gmail.com', 'admin123', 1),
+('prueba@gmail.com','noesadmin', 0)

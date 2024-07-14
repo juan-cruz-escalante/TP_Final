@@ -9,12 +9,51 @@ namespace Negocio
 {
     public class UsuarioNegocio
     {
+        public List<Usuario> listar()
+        {
+            List<Usuario> lista = new List<Usuario>();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("Select ID, Usuario, Pass, TipoUsuario, Apellidos, Nombres, Nacimiento, Adm, ImagenUrl from Usuarios");
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Usuario aux = new Usuario();
+                    aux.Id = (int)datos.Lector["ID"];
+                    aux.User = (string)datos.Lector["Usuario"];
+                    aux.Pass = (string)datos.Lector["Pass"];
+                    aux.Apellidos = (string)datos.Lector["Apellidos"]; 
+                    aux.Nombres = (string)datos.Lector["Nombres"];
+                    aux.FechaNacimiento = (DateTime)datos.Lector["Nacimiento"];
+                    aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    aux.admin = (bool)datos.Lector["Adm"];
+
+                    lista.Add(aux);
+                }
+
+                return lista;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
         public bool Loguear(Usuario usuario)
         {
             AccesoDatos datos = new AccesoDatos();
+
             try
             {
-                datos.setearConsulta("select ID, Usuario, Pass, TipoUsuario from Usuarios Where Usuario = @user AND Pass = @pass");
+                datos.setearConsulta("Select ID, Adm from Usuarios Where usuario = @user and pass = @pass");
                 datos.setearParametro("@user", usuario.User);
                 datos.setearParametro("@pass", usuario.Pass);
 
@@ -22,20 +61,19 @@ namespace Negocio
                 while(datos.Lector.Read())
                 {
                     usuario.Id = (int)datos.Lector["ID"];
-                    usuario.TipoUsuario = (int)(datos.Lector["TipoUsuario"]) == 1 ? TipoUsuario.Admin : TipoUsuario.Normal;
+                    usuario.admin = (bool)datos.Lector["Adm"];
+
                     return true;
                 }
                 return false;
+
             }
             catch (Exception ex) 
             {
                 throw ex;
             }
-            finally
-            {
-                datos.cerrarConexion();
-            }
         }
+
         public int insertarNuevo(Usuario nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
@@ -43,13 +81,11 @@ namespace Negocio
             try
             {
                 datos.setearProcedimiento("insertarNuevo");
-                datos.setearParametro("@email", nuevo.User);
+                datos.setearParametro("@user", nuevo.User);
                 datos.setearParametro("@pass", nuevo.Pass);
-                
                 return datos.ejecutarAccionScalar();
-                
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw ex;
             }

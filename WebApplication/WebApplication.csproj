@@ -71,8 +71,8 @@
     <Content Include="Contenido\estilo.css" />
     <Content Include="Error.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="IniciarSesion.aspx" />
     <Content Include="Inicio.aspx" />
-    <Content Include="InicioSesion.aspx" />
     <Content Include="Productos.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="Web.config" />
@@ -95,19 +95,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IniciarSesion.aspx.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.aspx.designer.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="InicioSesion.aspx.cs">
-      <DependentUpon>InicioSesion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="InicioSesion.aspx.designer.cs">
-      <DependentUpon>InicioSesion.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPrincipal.Master.cs">
       <DependentUpon>MasterPrincipal.Master</DependentUpon>

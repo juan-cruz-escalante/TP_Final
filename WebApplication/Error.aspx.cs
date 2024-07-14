@@ -11,10 +11,9 @@ namespace WebApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Error"] != null)
+            if(Session["Error"] != null)
             {
-                //lblMensaje.Text = Session["Error"].ToString();
-                lblMensaje.Text = "Por favor comuníquese con el administrador...";
+                lblMensaje.Text = Session["Error"].ToString();
             }
         }
     }

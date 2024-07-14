@@ -15,8 +15,7 @@
 </head>
 <body class="letra">
     <form runat="server">
-        <!-- Seccion de barra-->
-        <section i        <section id="minimenu" class="fondo-secciones">
+        <section id="minimenu" class="fondo-secciones">
             <header>
                 <nav id="opciones">
                     <a href="/Inicio.aspx" class="suave" title="Ir al inicio"><i class="fa-solid fa-house"></i>INICIO</a>
@@ -24,19 +23,25 @@
                     <a href="/Pagina.aspx" class="suave" title="Sobre Nosotros"><i class="fa-solid fa-user"></i>NOSOTROS</a>
                     <a href="/Pagina.aspx" class="suave" title="Contacto"><i class="fa-solid fa-pen"></i>CONTACTANOS</a>
                     <a href="/CarritoDeCompras.aspx" class="suave" title="Ver carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <%if (Session["usuario"] != null && ((Dominio.Usuario)Session["usuario"]).admin)
+                        {%>
+                    <a href="/Inicio.aspx" class="suave" title="Ver carrito">Administrador</a>
+                    <%}%>
                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                         <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <%if (Session["usuario"] == null) { %>
+                            <button ID="botonInicio" type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 Iniciar Sesión
                             </button>
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
                                     <ul class="dropdown-menu dropdown-menu-dark fondo-secciones">
-                                        <li><a class="dropdown-item" href="InicioSesion.aspx">Ya tengo una cuenta</a></li>
+                                        <li><a class="dropdown-item" href="IniciarSesion.aspx">Ya tengo una cuenta</a></li>
                                         <li><a class="dropdown-item" href="Registrarse.aspx">Registrarme</a></li>
                                     </ul>
                                 </li>
                             </ul>
+                            <%}%>
                         </div>
                     </div>
                 </nav>
