@@ -29,12 +29,12 @@ namespace Negocio
                     aux.IdArticulo = (int)datos.Lector["ID"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
-                    aux.Tamanio = new Tamano();
-                    aux.Tamanio.Tamanio = (string)datos.Lector["Tamano"];
-                    aux.Tamanio.IdTamanio = (int)datos.Lector["IDTamanio"];
+                    aux.Marca = new Marca();
+                    aux.Marca.Nombre = (string)datos.Lector["Tamano"];
+                    aux.Marca.Id = (int)datos.Lector["IDTamanio"];
                     aux.Categoria = new Categoria();
-                    aux.Categoria.DescripcionCategoria = (string)datos.Lector["Categoria"];
-                    aux.Categoria.IdCategoria = (int)datos.Lector["IDCategoria"];
+                    aux.Categoria.Nombre = (string)datos.Lector["Categoria"];
+                    aux.Categoria.Id = (int)datos.Lector["IDCategoria"];
                     aux.Precio = (float)(decimal)datos.Lector["Precio"];
                     aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
 
@@ -70,12 +70,12 @@ namespace Negocio
                     aux.IdArticulo = (int)datos.Lector["ID"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
-                    aux.Tamanio = new Tamano();
-                    aux.Tamanio.Tamanio = (string)datos.Lector["Tamano"];
-                    aux.Tamanio.IdTamanio = (int)datos.Lector["IDTamanio"];
+                    aux.Marca = new Marca();
+                    aux.Marca.Nombre = (string)datos.Lector["Tamano"];
+                    aux.Marca.Id = (int)datos.Lector["IDTamanio"];
                     aux.Categoria = new Categoria();
-                    aux.Categoria.DescripcionCategoria = (string)datos.Lector["Categoria"];
-                    aux.Categoria.IdCategoria = (int)datos.Lector["IDCategoria"];
+                    aux.Categoria.Nombre = (string)datos.Lector["Categoria"];
+                    aux.Categoria.Id = (int)datos.Lector["IDCategoria"];
                     aux.Precio = (float)(decimal)datos.Lector["Precio"];
                     aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
 

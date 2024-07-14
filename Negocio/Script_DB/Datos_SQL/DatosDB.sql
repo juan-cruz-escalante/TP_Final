@@ -1,73 +1,23 @@
-USE Simulacion
+USE TP_Final
 
 Insert into Categoria values 
-('Hamburguesas'), 
-('Sandwich'), 
-('Pizzas'), 
-('Panchos'), 
-('Bebidas'), 
-('Postres'), 
-('Papas Fritas'), 
-('Empanadas')
+('Televisor'), 
+('Celular'), 
+('Accesorio'), 
+('Tablet'), 
+('Notebook'), 
+('Consola')
 
-Insert into Tamaño
-values 
-('Mediano'),
-('Grande'), 
-('350 cc'), 
-('750 cc'), 
-('1 Lt'), 
-('Individual'), 
-('Grande'),
-('350 cc'), 
-('750 cc'), 
-('1 Lt')
-
-Insert into Tipo (IdCategoria,Tipo)
-values 
-(1,'Simple'),
-(1,'Simple - Completa'),
-(1,'Simple - Jamon y Queso'),
-(1,'Simple - Lechuga y Tomate'),
-(1,'Doble - simple'),
-(1,'Doble - Completa'),
-(1,'Doble - Jamon y Queso'),
-(1,'Doble - Lechuga y Tomate'),
-(1,'Triple - simple'),
-(1,'Triple - Completa'),
-(1,'Triple - Jamon y Queso'),
-(1,'Triple - Lechuga y Tomate'),
-(2,'Milanesa - simple'),
-(2,'Milanesa - Completa'),
-(2,'Milanesa - Jamon y Queso'),
-(2,'Milanesa - Lechuga y Tomate'),
-(2,'Lomito - simple'),
-(2,'Lomito - Completo'),
-(2,'Bondiola - simple'),
-(2,'Bondiola - Completa'),
-(3,'Muzzarella'),
-(3,'Jamón'),
-(3,'Huevo'),
-(3,'Napolitana'),
-(3,'Jamón y Morrón'),
-(3,'Calabresa'),
-(4,'Simple'),
-(4,'Jamón y Queso'),
-(4,'Con papas fritas'),
-(5,'Agua'),
-(5,'Agua Saborizada'),
-(5,'Gaseosa'),
-(5,'Cerveza'),
-(6,'Helado'),
-(6,'Flan'),
-(6,'Gelatina'),
-(6,'Budín'),
-(7,'Simples'),
-(7,'Chedar'),
-(7,'Chedar y Bacon'),
-(8,'Carne'),
-(8,'Jamón y Queso'),
-(8,'Pollo')
+Insert into Marca values 
+('Samsung'), 
+('Apple'), 
+('Sony'), 
+('Xbox'), 
+('Xiaomi'), 
+('LG'),
+('Philips'), 
+('Asus'), 
+('Lenovo')
 
 Insert into Articulos
 values
@@ -146,7 +96,7 @@ values
 ('josias@gmail.com', 'admin123', 1),
 ('prueba@gmail.com','noesadmin', 0)
 
-****************************************************************************************************************
+***************************************************************************************************************
 
 SELECT A.ID,a.nombre, a.Descripcion,C.Nombre,T.Tamaño,A.Precio, a.ImagenUrl, a.Disponible  from Articulos A
 inner join Categoria C On C.ID = A.IdCategoria

@@ -1,36 +1,32 @@
-create database TP_Final
-go
-use TP_Final
-go
-CREATE TABLE Tamano(
-    ID int not null primary key identity(1,1),
-    Tamano varchar(50) not null
-)
-Go
+CREATE DATABASE TP_Final
+GO
+USE TP_Final
+GO
 CREATE TABLE Categoria(
     ID int not null primary key identity(1,1),
     Nombre varchar(50) not null
 )
-Go
-CREATE TABLE Tipo(
+GO
+CREATE TABLE Marca(
     ID int not null primary key identity(1,1),
-    IdCategoria int not null foreign key references Categoria(ID),
-    Tipo varchar(50) not null
+    Nombre varchar(50) not null
 )
-Go
+GO
 CREATE TABLE Articulos(
     ID int not null primary key identity(1,1),
     Nombre varchar(50) not null,
-    Descripcion varchar(100) not null,
+    Descripcion varchar(500) not null,
     IdCategoria int not null foreign key references Categoria(ID),
-    IdTamano int not null foreign key references Tamano(ID),
+    IdMarca int not null foreign key references Marca(ID),
     Precio money not null CHECK(Precio > 0), 
     ImagenUrl varchar (1000),
-    Disponible bit default(1)
+    Disponible bit default(1),
+    Stock int not null CHECK(Stock >= 0)
 )
+GO
 CREATE TABLE Usuarios(
     ID int not null primary key identity(1,1),
-    Usuario varchar(50) not null UNIQUE
+    Usuario varchar(50) not null UNIQUE,
     Pass varchar(16) not null, 
     Apellidos varchar(100) null,
     Nombres varchar(100) null,
@@ -38,11 +34,12 @@ CREATE TABLE Usuarios(
     ImagenUrl varchar (1000) null,
     Adm bit default(0) NULL
 )
+GO
 Create Procedure insertarNuevo
 @user varchar(50),
 @pass varchar(16)
 as
-insert into Usuarios (Usuario, Pass, TipoUsuario) values (@user, @pass, 0)
+insert into Usuarios (Usuario, Pass, Adm) values (@user, @pass, 0)
 
 Insert into Usuarios (Usuario, Pass, Adm)
 values

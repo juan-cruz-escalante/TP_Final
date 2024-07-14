@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    public class Tipo
+    public class Marca
     {
-        public int IdTipo { get; set; }
-        public int IdCategoria { get; set; }
-        public string DescripcionTipo { get; set; }
+        public int Id { get; set; }
+        public string Nombre { get; set; }
         public override string ToString()
         {
-            return DescripcionTipo;
+            return Nombre;
         }
     }
 }
