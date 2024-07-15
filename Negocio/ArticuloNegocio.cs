@@ -20,7 +20,7 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("SELECT A.ID, A.Nombre, A.Descripcion, C.Nombre Categoria, T.Tamano, A.Precio, A.ImagenUrl, A.Disponible, T.ID IDTamanio, C.ID IDCategoria FROM Articulos A, Categoria C, Tamano T WHERE A.IdCategoria = C.ID AND A.IdTamano = T.ID");
+                datos.setearConsulta("SELECT A.ID, A.Nombre, A.Descripcion, C.ID IDCategoria, C.Nombre Categoria, M.ID IDMarca, M.Nombre Marca, A.Precio, A.ImagenUrl, A.Disponible, A.Stock FROM Articulos A, Categoria C, Marca M WHERE A.IdCategoria = C.ID AND A.IdMarca = M.ID");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -30,13 +30,14 @@ namespace Negocio
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
                     aux.Marca = new Marca();
-                    aux.Marca.Nombre = (string)datos.Lector["Tamano"];
-                    aux.Marca.Id = (int)datos.Lector["IDTamanio"];
+                    aux.Marca.Id = (int)datos.Lector["IDMarca"];
+                    aux.Marca.Nombre = (string)datos.Lector["Marca"];
                     aux.Categoria = new Categoria();
-                    aux.Categoria.Nombre = (string)datos.Lector["Categoria"];
                     aux.Categoria.Id = (int)datos.Lector["IDCategoria"];
+                    aux.Categoria.Nombre = (string)datos.Lector["Categoria"];
                     aux.Precio = (float)(decimal)datos.Lector["Precio"];
                     aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    aux.Stock = (int)datos.Lector["Stock"];
 
                     lista.Add(aux);
                 }
@@ -59,7 +60,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                string consulta = "SELECT A.ID, A.Nombre, A.Descripcion, C.Nombre Categoria, T.Tamano, A.Precio, A.ImagenUrl, A.Disponible, T.ID IDTamanio, C.ID IDCategoria FROM Articulos A, Categoria C, Tamano T WHERE A.IdCategoria = C.ID AND A.IdTamano = T.ID";
+                string consulta = "SELECT A.ID, A.Nombre, A.Descripcion, C.ID IDCategoria, C.Nombre Categoria, M.ID IDMarca, M.Nombre Marca, A.Precio, A.ImagenUrl, A.Disponible, A.Stock FROM Articulos A, Categoria C, Marca M WHERE A.IdCategoria = C.ID AND A.IdMarca = M.ID";
                 datos.setearConsulta(consulta);
 
                 datos.ejecutarLectura();
@@ -71,13 +72,14 @@ namespace Negocio
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
                     aux.Marca = new Marca();
-                    aux.Marca.Nombre = (string)datos.Lector["Tamano"];
-                    aux.Marca.Id = (int)datos.Lector["IDTamanio"];
+                    aux.Marca.Id = (int)datos.Lector["IDMarca"];
+                    aux.Marca.Nombre = (string)datos.Lector["Marca"];
                     aux.Categoria = new Categoria();
-                    aux.Categoria.Nombre = (string)datos.Lector["Categoria"];
                     aux.Categoria.Id = (int)datos.Lector["IDCategoria"];
+                    aux.Categoria.Nombre = (string)datos.Lector["Categoria"];
                     aux.Precio = (float)(decimal)datos.Lector["Precio"];
                     aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    aux.Stock = (int)datos.Lector["Stock"];
 
                     lista.Add(aux);
                 }

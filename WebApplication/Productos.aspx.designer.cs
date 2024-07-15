@@ -69,24 +69,6 @@ namespace WebApplication
         protected global::System.Web.UI.WebControls.ImageButton btn6;
 
         /// <summary>
-        /// btn7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn7;
-
-        /// <summary>
-        /// btn8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn8;
-
-        /// <summary>
         /// btnRegresar control.
         /// </summary>
         /// <remarks>

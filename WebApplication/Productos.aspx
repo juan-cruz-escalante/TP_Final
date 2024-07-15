@@ -9,30 +9,24 @@
     <%if (opcion == 0) { %>
     <br/>
         <div class="container text-center">
-    <div class="row align-items-start">
-        <div class="col-6 col-md-3">
+            <div class="row align-items-start">
+                <div class="col-6 col-md-4">
                     <asp:ImageButton ID="btn1" runat="server" ImageUrl="Contenido/1.png" CssClass="imageButton" OnClick="btn1_Click" />
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-4">
                     <asp:ImageButton ID="btn2" runat="server" ImageUrl="Contenido/2.png" CssClass="imageButton" OnClick="btn2_Click" />
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-4">
                     <asp:ImageButton ID="btn3" runat="server" ImageUrl="Contenido/3.png" CssClass="imageButton" OnClick="btn3_Click" />
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-4">
                     <asp:ImageButton ID="btn4" runat="server" ImageUrl="Contenido/4.png" CssClass="imageButton" OnClick="btn4_Click" />
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-4">
                     <asp:ImageButton ID="btn5" runat="server" ImageUrl="Contenido/5.png" CssClass="imageButton" OnClick="btn5_Click" />
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-4">
                     <asp:ImageButton ID="btn6" runat="server" ImageUrl="Contenido/6.png" CssClass="imageButton" OnClick="btn6_Click" />
-                </div>
-                <div class="col-6 col-md-3">
-                    <asp:ImageButton ID="btn7" runat="server" ImageUrl="Contenido/7.png" CssClass="imageButton" OnClick="btn7_Click" />
-                </div>
-                <div class="col-6 col-md-3">
-                    <asp:ImageButton ID="btn8" runat="server" ImageUrl="Contenido/8.png" CssClass="imageButton" OnClick="btn8_Click" />
                 </div>
             </div>
         </div>
@@ -54,7 +48,7 @@
         <div class="position-absolute top-0 end-0">
             <asp:TextBox ID="tbxFiltro" placeholder="Buscar" OnTextChanged="tbxFiltro_TextChanged" runat="server" > </asp:TextBox>
             <i class="fa-solid fa-magnifying-glass"></i>
-        </div>>
+        </div>
     </div>
     <br/><br/><br/>
 
@@ -62,7 +56,7 @@
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <% foreach (Dominio.Articulos art in ListaArticulo) {
-                if (art.Categoria.IdCategoria == opcion) { %>
+                if (art.Categoria.Id == opcion) { %>
                   <div class="col">
                     <div class="card h-100">
                       <img src="<%: art.ImagenUrl %>" title="Imagen del producto" class="card-img-top" alt="Imagen no encontrada"
@@ -77,5 +71,5 @@
         <% } %>
     <% } %>
     </div>
-    <br/>
+    <br/><br/><br/>
 </asp:Content>
