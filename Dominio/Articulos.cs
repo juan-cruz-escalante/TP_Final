@@ -18,5 +18,10 @@ namespace Dominio
         public string ImagenUrl { get; set; }
         public bool Disponible { get; set; }
         public int Stock { get; set; }
+        public int contador { get; set; }
+        public Articulos()
+        {
+            contador = 1;
+        }
     }
 }

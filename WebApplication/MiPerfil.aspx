@@ -8,8 +8,12 @@
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtEmail" />
+                    <label class="form-label">Usuario</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="txtUser" />
+                </div>
+                <div class="mb-3">
+                    <label type="password" class="form-label">Contraseña</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="txtPass" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Apellidos</label>
@@ -21,7 +25,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Fecha Nacimiento</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtFechaNacimiento" placeholder="1/1/1990" />
+                    <asp:TextBox runat="server" CssClass="form-control" ID="txtFechaNacimiento" TextMode="Date" />
                 </div>
             </div>
 

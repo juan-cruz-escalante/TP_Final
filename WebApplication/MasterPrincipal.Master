@@ -25,11 +25,11 @@
                     <a href="/CarritoDeCompras.aspx" class="suave" title="Ver carrito"><i class="fa-solid fa-cart-shopping"></i></a>
                     <%if (Session["usuario"] != null)
                         {%>
-                    <a href="/CarritoDeCompras.aspx" class="suave" title="Mi Perfil">Mi Perfil</a>
+                    <a href="/MiPerfil.aspx" class="suave" title="Mi Perfil">Mi Perfil</a>
                     <%}%>
                     <%if (Session["usuario"] != null && ((Dominio.Usuario)Session["usuario"]).admin)
                         {%>
-                    <a href="/Inicio.aspx" class="suave" title="Menu Administrador"><i class="fa-solid fa-bars"></i> Administrador </a>
+                    <a href="/MiPerfil.aspx" class="suave" title="Menu Administrador"><i class="fa-solid fa-bars"></i>Administrador </a>
                     <%}%>
                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                         <div class="btn-group" role="group">
@@ -50,7 +50,7 @@
                                 else
                                 {%>
                             <asp:Image ID="imgPerfil" Style="height: 40px; width: 40px; border-radius: 50%; margin-right: 10px;"
-                                ImageUrl="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg"
+                                ImageUrl= "https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg"
                                 runat="server" />
                             <asp:Button Text="Salir" ID="btnSalir" CssClass="btn btn-light me-2" OnClick="btnSalir_Click" runat="server" />
                             <%}%>

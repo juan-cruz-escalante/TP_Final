@@ -11,22 +11,97 @@ namespace WebApplication
 {
     public partial class CarritoDeCompras : System.Web.UI.Page
     {
-        public List<Articulos> listaArticulos { get; set; }
+        public List<Articulos> Carrito { get; set; }
+        public decimal total { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Productos"] == null)
+            if (Session["Carrito"] == null)
             {
-                ArticuloNegocio negocio = new ArticuloNegocio();
-                listaArticulos = negocio.listarConSP();
-                Session.Add("Productos", listaArticulos);
+                Session["Carrito"] = new List<Articulos>();
             }
-            dgvArticulos.DataSource = Session["Productos"];
-            dgvArticulos.DataBind();
+            Carrito = (List<Articulos>)Session["Carrito"];
+            if (Request.QueryString["id"] != null && int.TryParse(Request.QueryString["id"], out int id))
+            {
+                if (Session["Productos"] != null)
+                {
+                    List<Articulos> SeccionProductos = (List<Articulos>)Session["Productos"];
+                    Articulos seleccionado = SeccionProductos.Find(x => x.IdArticulo == id);
+
+                    if (seleccionado != null && !Carrito.Any(x => x.IdArticulo == id))
+                    {
+                        Carrito.Add(seleccionado);
+                        Session["Carrito"] = Carrito;
+                    }
+                }
+            }
+            if (!IsPostBack)
+            {
+                Repetidor.DataSource = Carrito;
+                Repetidor.DataBind();
+                ActualizarTotal();
+
+                if (Carrito.Count == 0)
+                {
+                    divTotal.Visible = false;
+                }
+            }
         }
-        protected void dgvArticulos_SelectedIndexChanged(object sender, EventArgs e)
+
+        protected void EliminarArticulo_Click(object sender, EventArgs e)
         {
-            var id = dgvArticulos.SelectedDataKey.Value.ToString();
-            Response.Redirect("CarritoDeCompras.aspx?id=" + id);
+            int idArticulo = Convert.ToInt32(((Button)sender).CommandArgument);
+            Articulos articuloAEliminar = Carrito.FirstOrDefault(x => x.IdArticulo == idArticulo);
+            if (articuloAEliminar != null)
+            {
+                Carrito.Remove(articuloAEliminar);
+                articuloAEliminar.contador = 1;
+                Session["Carrito"] = Carrito;
+                Repetidor.DataSource = Carrito;
+                Repetidor.DataBind();
+                ActualizarTotal();
+            }
+        }
+
+        protected void AgregarArticulo_Click(object sender, EventArgs e)
+        {
+            int idArticulo = Convert.ToInt32(((Button)sender).CommandArgument);
+            Articulos articulo = Carrito.FirstOrDefault(x => x.IdArticulo == idArticulo);
+            if (articulo != null)
+            {
+                articulo.contador++;
+                Session["Carrito"] = Carrito;
+                Repetidor.DataSource = Carrito;
+                Repetidor.DataBind();
+                ActualizarTotal();
+            }
+        }
+        protected void RestarArticulo_Click(object sender, EventArgs e)
+        {
+            int idArticulo = Convert.ToInt32(((Button)sender).CommandArgument);
+            Articulos articulo = Carrito.FirstOrDefault(x => x.IdArticulo == idArticulo);
+            if (articulo != null)
+            {
+                articulo.contador--;
+                if (articulo.contador <= 0)
+                {
+                    Carrito.Remove(articulo);
+                    articulo.contador = 1;
+                }
+                Session["Carrito"] = Carrito;
+                Repetidor.DataSource = Carrito;
+                Repetidor.DataBind();
+                ActualizarTotal();
+            }
+        }
+        private void ActualizarTotal()
+        {
+            total = Carrito.Sum(x => (decimal)x.Precio * x.contador);
+            lblTotal.Text = total.ToString("F2");
+        }
+
+        protected void Finalizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

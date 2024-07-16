@@ -26,7 +26,7 @@ namespace Negocio
                     aux.Id = (int)datos.Lector["ID"];
                     aux.User = (string)datos.Lector["Usuario"];
                     aux.Pass = (string)datos.Lector["Pass"];
-                    aux.Apellidos = (string)datos.Lector["Apellidos"]; 
+                    aux.Apellidos = (string)datos.Lector["Apellidos"];
                     aux.Nombres = (string)datos.Lector["Nombres"];
                     aux.FechaNacimiento = (DateTime)datos.Lector["Nacimiento"];
                     aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
@@ -54,22 +54,31 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("Select ID, Adm from Usuarios Where usuario = @user and pass = @pass");
+                datos.setearConsulta("Select ID, Nombres, Apellidos, ImagenUrl, Nacimiento, Adm from Usuarios Where usuario = @user and pass = @pass");
                 datos.setearParametro("@user", usuario.User);
                 datos.setearParametro("@pass", usuario.Pass);
 
                 datos.ejecutarLectura();
-                while(datos.Lector.Read())
+                while (datos.Lector.Read())
                 {
                     usuario.Id = (int)datos.Lector["ID"];
                     usuario.admin = (bool)datos.Lector["Adm"];
-
+                    usuario.Apellidos = (string)datos.Lector["Apellidos"];
+                    usuario.Nombres = (string)datos.Lector["Nombres"];
+                    if (!(datos.Lector["ImagenUrl"] is DBNull))
+                    {
+                    usuario.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    }
+                    if (!(datos.Lector["Nacimiento"] is DBNull))
+                    {
+                        usuario.FechaNacimiento = DateTime.Parse(datos.Lector["Nacimiento"].ToString());
+                    }
                     return true;
                 }
                 return false;
 
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -86,12 +95,36 @@ namespace Negocio
                 datos.setearParametro("@pass", nuevo.Pass);
                 return datos.ejecutarAccionScalar();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
             finally
             {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void Actualizar(Usuario user)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("UPDATE Usuarios SET Apellidos = @apellidos, Nombres = @nombres, ImagenUrl, @nacimiento = Nacimiento = @imagen WHERE ID = @id");
+                datos.setearParametro("@apellidos", user.Apellidos);
+                datos.setearParametro("@nombres", user.Nombres);
+                datos.setearParametro("@imagen", user.ImagenUrl);
+                datos.setearParametro("@nacimiento", user.FechaNacimiento);
+                datos.setearParametro("@id", user.Id);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally 
+            { 
                 datos.cerrarConexion();
             }
         }
