@@ -97,3 +97,18 @@
     font-size: 35px;
     color: #36A0FF;
 }
+
+body {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    text-align: center;
+}

@@ -74,6 +74,7 @@
     <Content Include="IniciarSesion.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="MiPerfil.aspx" />
+    <Content Include="Nosotros.aspx" />
     <Content Include="Productos.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="Web.config" />
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="MiPerfil.aspx.designer.cs">
       <DependentUpon>MiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nosotros.aspx.cs">
+      <DependentUpon>Nosotros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nosotros.aspx.designer.cs">
+      <DependentUpon>Nosotros.aspx</DependentUpon>
     </Compile>
     <Compile Include="Productos.aspx.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
