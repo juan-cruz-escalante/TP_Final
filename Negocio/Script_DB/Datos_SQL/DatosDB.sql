@@ -53,8 +53,6 @@ values
 ('Xbox Series S','Consola Xbox Series S 512gb Digital Blanco, Memoria RAM de 10GB, Memoria interna:512 GB.',6,4,800000,'https://http2.mlstatic.com/D_NQ_NP_2X_617595-MLU72567435624_112023-F.webp',1,10)
 
 
-
-
 Insert into Usuarios (Usuario, Pass, Adm)
 values
 ('juancruz@gmail.com', 'admin123', 1),

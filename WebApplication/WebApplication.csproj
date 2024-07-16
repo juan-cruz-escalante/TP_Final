@@ -73,6 +73,7 @@
     <Content Include="Global.asax" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="Inicio.aspx" />
+    <Content Include="MiPerfil.aspx" />
     <Content Include="Productos.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="Web.config" />
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="MasterSinNav.Master.designer.cs">
       <DependentUpon>MasterSinNav.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MiPerfil.aspx.cs">
+      <DependentUpon>MiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiPerfil.aspx.designer.cs">
+      <DependentUpon>MiPerfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Productos.aspx.cs">
       <DependentUpon>Productos.aspx</DependentUpon>

@@ -35,14 +35,9 @@ CREATE TABLE Usuarios(
     Adm bit default(0) NULL
 )
 GO
-Create Procedure insertarNuevo
+create Procedure insertarNuevo
 @user varchar(50),
 @pass varchar(16)
 as
-insert into Usuarios (Usuario, Pass, Adm) values (@user, @pass, 0)
+insert into Usuarios (Usuario, Pass, Adm) output inserted.ID values (@user, @pass, 0)
 
-Insert into Usuarios (Usuario, Pass, Adm)
-values
-('juancruz@gmail.com', 'admin123', 1),
-('josias@gmail.com', 'admin123', 1),
-('prueba@gmail.com','noesadmin', 0)

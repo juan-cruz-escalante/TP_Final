@@ -37,9 +37,9 @@ namespace WebApplication
 
                 user.User = email;
                 user.Pass = _pass;
-                int id = negocio.insertarNuevo(user);
+                user.Id = negocio.insertarNuevo(user);
 
-                if (id > 0)
+                if (user.Id > 0)
                 {
                     emailService.armarCorreo(user.User, "Bienvenida", "Hola, ¡bienvenido a nuestra aplicación!");
                     emailService.enviarEmail();

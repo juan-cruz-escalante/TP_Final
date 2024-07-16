@@ -4,20 +4,23 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Dominio;
+using Negocio;
 
 namespace WebApplication
 {
-    public partial class MasterPrincipal : System.Web.UI.MasterPage
+    public partial class MiPerfil : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Usuario aux = new Usuario();
+            UsuarioNegocio negocio = new UsuarioNegocio();
 
         }
 
-        protected void btnSalir_Click(object sender, EventArgs e)
+        protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            Session.Clear();
-            Response.Redirect("Inicio.aspx");
+
         }
     }
 }
