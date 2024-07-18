@@ -1,24 +1,22 @@
 ﻿body {
-    background: linear-gradient(to right, #ffccd5, #ffd5d9, #ffe0de, #ffd5d9, #ffccd5);
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
     font-family: 'Montserrat Alternates', sans-serif;
-    color: white;
 }
 
 .letra {
     font-family: 'Montserrat Alternates', sans-serif;
-    color: #000000;
 }
 
 .fondo-secciones {
-    background: linear-gradient(to right, #8e0000, #b10000, #8e0000);
+    background: #000000;
     padding: 0 20px;
 }
-
 
 .centrar {
     text-align: center;
 }
-/*Seccion de menu*/
+
+/* Seccion de menu */
 #minimenu {
     text-align: center;
 }
@@ -36,23 +34,35 @@
 
         #minimenu nav a:hover {
             transform: scale(1.1);
-            color: #e56e83;
+            color: #00bfff;
         }
 
 #opciones {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-    #opciones a {
-        color: #ffffff;
+.left-menu {
+    display: flex;
+    align-items: center;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+}
+
+#opciones a {
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+    #opciones a.suave {
+        margin-right: auto;
     }
 
-        #opciones a.suave {
-            margin-right: auto;
-        }
-
-@media(max-width: 800px) {
+@media (max-width: 800px) {
     #minimenu nav a {
         border: 1px solid transparent;
         font-size: 10px;
@@ -73,18 +83,13 @@
 
     .imageButton:hover {
         transform: scale(1.05);
-    }  
+    }
 
 .footer {
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
-}
-
-.dropdown-menu {
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .header {
@@ -98,17 +103,38 @@
     color: #36A0FF;
 }
 
-body {
-    background-color: red;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
 .content {
     text-align: center;
+}
+
+.marcamenu {
+    margin-block-end: 0 auto;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+    .marcamenu:hover {
+        transform: scale(1.05);
+    }
+
+@media (max-width: 800px) {
+    .marcamenu {
+        width: 100px;
+    }
+}
+.form-control {
+    max-width: 250px;
+}
+
+@media (max-width: 800px) {
+    .form-control {
+        width: 100px;
+    }
+}
+.imagen-detalle {
+    max-width: 50%;
+    height: auto;
+    border: 5px solid #ddd;
+    border-radius: 30px;
 }
