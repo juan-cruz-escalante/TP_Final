@@ -1,30 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\",
+  "WorkspaceRootPath": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\proyectos progra3\\tp_final\\webapplication\\masterprincipal.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\masterprincipal.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\contenido\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\contenido\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\carritodecompras.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\carritodecompras.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\carritodecompras.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\carritodecompras.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\carritodecompras.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\webapplication\\carritodecompras.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\carritodecompras.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\contenido\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\contenido\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\productos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\productos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\productos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\productos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\detalleproducto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\detalleproducto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\detalleproducto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\detalleproducto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,95 +58,152 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Inicio.aspx",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Inicio.aspx",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Inicio.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Inicio.aspx",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Inicio.aspx",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Inicio.aspx",
               "RelativeToolTip": "WebApplication\\Inicio.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-16T22:14:59.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2024-07-17T23:38:16.655Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MasterPrincipal.Master",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\MasterPrincipal.Master",
-              "RelativeDocumentMoniker": "WebApplication\\MasterPrincipal.Master",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\MasterPrincipal.Master",
-              "RelativeToolTip": "WebApplication\\MasterPrincipal.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-16T22:14:18.98Z",
+              "Title": "MasterPrincipal.Master.cs",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\MasterPrincipal.Master.cs",
+              "RelativeDocumentMoniker": "WebApplication\\MasterPrincipal.Master.cs",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\MasterPrincipal.Master.cs",
+              "RelativeToolTip": "WebApplication\\MasterPrincipal.Master.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwB0AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T23:36:00.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "Productos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Productos.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\Productos.aspx.cs",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Productos.aspx.cs",
+              "RelativeToolTip": "WebApplication\\Productos.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T22:24:52.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Nosotros.aspx",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Nosotros.aspx",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Nosotros.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Nosotros.aspx",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Nosotros.aspx",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Nosotros.aspx",
               "RelativeToolTip": "WebApplication\\Nosotros.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-16T22:04:56.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T21:39:46.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "estilo.css",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Contenido\\estilo.css",
+              "RelativeDocumentMoniker": "WebApplication\\Contenido\\estilo.css",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Contenido\\estilo.css",
+              "RelativeToolTip": "WebApplication\\Contenido\\estilo.css",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAHwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-17T21:38:38.22Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "estilo.css",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Contenido\\estilo.css",
-              "RelativeDocumentMoniker": "WebApplication\\Contenido\\estilo.css",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Contenido\\estilo.css",
-              "RelativeToolTip": "WebApplication\\Contenido\\estilo.css",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAG0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-16T22:04:16.273Z",
-              "EditorCaption": ""
+              "Title": "CarritoDeCompras.aspx",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\CarritoDeCompras.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\CarritoDeCompras.aspx",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\CarritoDeCompras.aspx",
+              "RelativeToolTip": "WebApplication\\CarritoDeCompras.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-07-17T21:26:01.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "DetalleProducto.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\DetalleProducto.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\DetalleProducto.aspx.cs",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\DetalleProducto.aspx.cs",
+              "RelativeToolTip": "WebApplication\\DetalleProducto.aspx.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwC0AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T21:12:41.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CarritoDeCompras.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\CarritoDeCompras.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\CarritoDeCompras.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\CarritoDeCompras.aspx.cs",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\CarritoDeCompras.aspx.cs",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\CarritoDeCompras.aspx.cs",
               "RelativeToolTip": "WebApplication\\CarritoDeCompras.aspx.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAqwGoAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-16T21:55:06.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CarritoDeCompras.aspx",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\CarritoDeCompras.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\CarritoDeCompras.aspx",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\CarritoDeCompras.aspx",
-              "RelativeToolTip": "WebApplication\\CarritoDeCompras.aspx",
+              "DocumentIndex": 8,
+              "Title": "DetalleProducto.aspx",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\DetalleProducto.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\DetalleProducto.aspx",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\DetalleProducto.aspx",
+              "RelativeToolTip": "WebApplication\\DetalleProducto.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-16T21:55:06.034Z",
+              "WhenOpened": "2024-07-17T19:01:34.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Productos.aspx",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Productos.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\Productos.aspx",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\Productos.aspx",
+              "RelativeToolTip": "WebApplication\\Productos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-07-17T18:37:58.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\Negocio\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "Negocio\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\Negocio\\AccesoDatos.cs",
+              "RelativeToolTip": "Negocio\\AccesoDatos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T18:09:07.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MasterPrincipal.Master",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\MasterPrincipal.Master",
+              "RelativeDocumentMoniker": "WebApplication\\MasterPrincipal.Master",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Proyectos PROGRA3\\TP_Final\\WebApplication\\MasterPrincipal.Master",
+              "RelativeToolTip": "WebApplication\\MasterPrincipal.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-07-16T22:14:18.98Z",
               "EditorCaption": ""
             }
           ]

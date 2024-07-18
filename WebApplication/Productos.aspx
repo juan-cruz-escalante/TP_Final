@@ -45,10 +45,14 @@
             </asp:LinkButton>
         </div>
         <!-- Filtro -->
-        <div class="position-absolute top-0 end-0">
-            <asp:TextBox ID="tbxFiltro" placeholder="Buscar" OnTextChanged="tbxFiltro_TextChanged" runat="server" > </asp:TextBox>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        <div class="position-absolute top-0 end-0 p-3">
+                <div class="input-group">
+                    <asp:TextBox ID="tbxFiltro" placeholder="Buscar" CssClass="form-control" OnTextChanged="tbxFiltro_TextChanged" runat="server"></asp:TextBox>
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+            </div>
     </div>
     <br/><br/><br/>
 
@@ -58,15 +62,16 @@
         <% foreach (Dominio.Articulos art in ListaArticulo) {
                 if (art.Categoria.Id == opcion) { %>
                   <div class="col">
-                    <div class="card h-100">
-                      <img src="<%: art.ImagenUrl %>" title="Imagen del producto" class="card-img-top" alt="Imagen no encontrada"
-                           onerror="this.onerror=null; this.src='https://www.italfren.com.ar/images/catalogo/imagen-no-disponible.jpeg';">
-                      <div class="card-body">
-                        <h5 class="card-title"><%: art.Nombre %></h5>
-                        <p class="card-text">Precio: $<%: art.Precio %></p>
-                          <a href="CarritoDeCompras.aspx?id=<%: art.IdArticulo %>" class="btn btn-success">Agregar al carrito</a>
+                      <a href="DetalleProducto.aspx?id=<%: art.IdArticulo %>" class="btn btn-light">
+                      <div class="card h-100">
+                        <img src="<%: art.ImagenUrl %>" title="Imagen del producto" class="card-img-top" alt="Imagen no encontrada"
+                             onerror="this.onerror=null; this.src='https://www.italfren.com.ar/images/catalogo/imagen-no-disponible.jpeg';">
+                        <div class="card-body">
+                          <h5 class="card-title"><%: art.Nombre %></h5>
+                          <p class="card-text">Precio: $<%: art.Precio %></p>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
              <% } %>
         <% } %>

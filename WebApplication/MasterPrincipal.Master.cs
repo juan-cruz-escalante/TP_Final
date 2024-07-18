@@ -13,6 +13,7 @@ namespace WebApplication
     public partial class MasterPrincipal : System.Web.UI.MasterPage
     {
         Usuario user = new Usuario();
+        public int Cantidad { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["usuario"] != null)
@@ -22,7 +23,17 @@ namespace WebApplication
             else
             {
                 imgPerfil.ImageUrl = "https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg";
+            }
 
+            if (Session["Carrito"] != null)
+            {
+                List<Articulos> carrito = (List<Articulos>)Session["Carrito"];
+                int numeroDeRegistros = carrito.Sum(a => a.contador);
+                Cantidad = numeroDeRegistros;
+            }
+            else
+            {
+                Cantidad = 0;
             }
         }
 
@@ -31,5 +42,6 @@ namespace WebApplication
             Session.Clear();
             Response.Redirect("Inicio.aspx");
         }
+
     }
 }

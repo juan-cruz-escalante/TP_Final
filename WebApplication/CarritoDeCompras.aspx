@@ -9,19 +9,21 @@
             <asp:Repeater runat="server" ID="Repetidor">
                 <ItemTemplate>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 text-center">
                             <img src='<%# Eval("ImagenUrl") %>' title="Imagen del producto" class="card-img-top" alt="Imagen no encontrada"
                                 onerror="this.onerror=null; this.src='https://www.italfren.com.ar/images/catalogo/imagen-no-disponible.jpeg';">
                             <div class="card-body">
                                 <h5 class="card-title"><%# Eval("Nombre") %></h5>
                                 <p class="card-text">Precio: $<%# Eval("Precio") %></p>
-                                <div class="btn btn-success" style="width: 6rem;">
-                                    Cantidad: <%# Eval("contador") %>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <asp:Button Text="+" CssClass="btn btn-outline-success" runat="server" ID="AgregarArticulo" CommandArgument='<%# Eval("IdArticulo") %>'
+                                        CommandName="IdArt" OnClick="AgregarArticulo_Click" />
+                                    <div class="btn btn-success" style="width: 6rem;">
+                                        Cantidad: <%# Eval("contador") %>
+                                    </div>
+                                    <asp:Button Text="-" CssClass="btn btn-outline-danger" runat="server" ID="RestarButton" CommandArgument='<%# Eval("IdArticulo") %>'
+                                        CommandName="RestarArticulo" OnClick="RestarArticulo_Click" />
                                 </div>
-                                <asp:Button Text="+" CssClass="btn btn-outline-success" runat="server" ID="AgregarArticulo" CommandArgument='<%# Eval("IdArticulo") %>'
-                                    CommandName="IdArt" OnClick="AgregarArticulo_Click" />
-                                <asp:Button Text="-" CssClass="btn btn-outline-danger" runat="server" ID="RestarButton" CommandArgument='<%# Eval("IdArticulo") %>'
-                                    CommandName="RestarArticulo" OnClick="RestarArticulo_Click" />
                                 <br /><br />
                                 <asp:Button Text="Eliminar del carrito" CssClass="btn btn-danger" runat="server" ID="EliminarArticulo" CommandArgument='<%# Eval("IdArticulo") %>'
                                     CommandName="IdArt" OnClick="EliminarArticulo_Click" />
@@ -32,6 +34,8 @@
                 </ItemTemplate>
             </asp:Repeater>
         </div>
+    </div>
+
         <!-- Panel para mostrar el total -->
         <%if(total != 0) { %>
         <asp:Panel ID="divTotal" runat="server" Visible="true">

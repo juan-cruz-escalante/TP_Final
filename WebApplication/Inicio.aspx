@@ -17,7 +17,7 @@
                     <img src="/Contenido/22.jpg" class="d-block w-100" alt="Imagen 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="/Contenido/33.jpg" class="d-block w-100" alt="Imagen 3">
+                    <img src="/Contenido/33.jpeg" class="d-block w-100" alt="Imagen 3">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
