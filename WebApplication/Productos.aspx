@@ -35,10 +35,9 @@
 
     <!-- Tipo de articulo seleccionado -->
     <!-- Seccion filtro y boton de volver -->
-    
     <% if (opcion != 0) { %>
     <div class="position-relative">
-        <!-- boton de volver -->
+        <!-- botón de volver -->
         <div class="position-absolute top-0 start-0">
             <asp:LinkButton ID="btnRegresar" runat="server" CssClass="btn btn-success" OnClick="btnRegresar_Click">
                 <i class="fa-solid fa-arrow-left"></i> Volver
@@ -46,18 +45,17 @@
         </div>
         <!-- Filtro -->
         <div class="position-absolute top-0 end-0 p-3">
-                <div class="input-group">
-                    <asp:TextBox ID="tbxFiltro" placeholder="Buscar" CssClass="form-control" OnTextChanged="tbxFiltro_TextChanged" runat="server"></asp:TextBox>
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </span>
-                </div>
+            <div class="input-group">
+                <asp:TextBox ID="tbxFiltro" placeholder="Buscar" CssClass="form-control" OnTextChanged="tbxFiltro_TextChanged" runat="server"></asp:TextBox>
+                <span class="input-group-text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
             </div>
+        </div>
     </div>
     <br/><br/><br/>
 
     <!-- Listado del tipo de producto seleccionado -->
-
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <% foreach (Dominio.Articulos art in ListaArticulo) {
                 if (art.Categoria.Id == opcion) { %>
@@ -75,7 +73,9 @@
                   </div>
              <% } %>
         <% } %>
-    <% } %>
     </div>
     <br/><br/><br/>
+<% } %>
+    
+    
 </asp:Content>

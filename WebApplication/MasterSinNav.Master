@@ -19,7 +19,7 @@
             <header>
                 <div class="text-bg-dark p-3>
                     <ul class="navbar-nav">
-                        <h1 class="display-3">Extremas.Net</h1>
+                        <img src="Contenido/marca.png" alt="Inicio Marca"/>
                     </ul>
                 </div>
             </header>

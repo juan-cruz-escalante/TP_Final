@@ -1,9 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterSinNav.Master" AutoEventWireup="true" CodeBehind="MiPerfil.aspx.cs" Inherits="WebApplication.MiPerfil" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPrincipal.Master" AutoEventWireup="true" CodeBehind="MiPerfil.aspx.cs" Inherits="WebApplication.MiPerfil" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
+        <br />
         <h2 class="text-center">Mi perfil</h2>
         <div class="row justify-content-center">
             <div class="col-md-4">
@@ -42,7 +43,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4">
                         <asp:Button Text="Guardar" CssClass="btn btn-danger btn-lg me-2" OnClick="btnGuardar_Click" ID="btnGuardar" runat="server" />
-                        <a href="Inicio.aspx">Volver</a>
+                        <a href="Inicio.aspx" class="btn btn-success" >Volver</a>
                     </div>
                 </div>
             </div>

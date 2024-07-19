@@ -21,8 +21,19 @@ namespace WebApplication
         {
             if (!IsPostBack)
             {
-                opcion = 0;
+                // Leer el parámetro de la URL
+                string opcionQueryString = Request.QueryString["opcion"];
+                if (int.TryParse(opcionQueryString, out int opcionId))
+                {
+                    opcion = opcionId;
+                }
+                else
+                {
+                    opcion = 0; // Valor predeterminado si no se proporciona un parámetro válido
+                }
             }
+
+            // Cargar los productos desde la sesión o la base de datos
             if (Session["Productos"] != null)
             {
                 ListaArticulo = (List<Articulos>)Session["Productos"];
@@ -33,7 +44,7 @@ namespace WebApplication
                 ListaArticulo = negocio.listar();
                 Session.Add("Productos", ListaArticulo);
             }
-        }
+    }
         protected void tbxFiltro_TextChanged(object sender, EventArgs e)
         {
             List<Articulos> Lista = (List<Articulos>)Session["Productos"];

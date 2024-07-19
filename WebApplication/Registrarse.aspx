@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterSinNav.Master" AutoEventWireup="true" CodeBehind="Registrarse.aspx.cs" Inherits="WebApplication.Registrarse" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPrincipal.Master" AutoEventWireup="true" CodeBehind="Registrarse.aspx.cs" Inherits="WebApplication.Registrarse" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -8,14 +8,18 @@
             <div class="col-md-6 offset-md-3">
                 <h2 class="text-center mb-4" style="color: black;">Crea tu cuenta</h2>
                 <form>
-                    <div class="form-group">
-                        <label for="txtEmail">Correo Electrónico</label>
-                        <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Ingrese su correo electrónico"></asp:TextBox>
+                    <div class="container centrarInicio">
+                        <div class="form-group">
+                            <label for="txtEmail">Correo Electrónico</label>
+                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Ingrese su correo electrónico"></asp:TextBox>
+                        </div>
                     </div>
                     <br />
-                    <div class="form-group">
-                        <label for="txtPassword">Contraseña</label>
-                        <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" placeholder="Ingrese su contraseña"></asp:TextBox>
+                    <div class="container centrarInicio">
+                        <div class="form-group">
+                            <label for="txtPassword">Contraseña</label>
+                            <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" placeholder="Ingrese su contraseña"></asp:TextBox>
+                        </div>
                     </div>
                     <br />
                     <br />

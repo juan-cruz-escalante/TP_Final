@@ -15,7 +15,7 @@
 </head>
 <body class="letra">
     <form runat="server">
-        <section id="minimenu" class="fondo-secciones">
+        <section  class="fondo-secciones">
             <header>
                 <nav id="opciones">
                     <div class="left-menu">
@@ -24,40 +24,38 @@
                         </a>
                     </div>
                     <div class="right-menu">
-                        <a href="/Productos.aspx" class="suave" title="Ver productos"><i class="fa-solid fa-shop"></i>PRODUCTOS</a>
-                        <a href="/Nosotros.aspx" class="suave" title="Sobre Nosotros"><i class="fa-solid fa-user"></i>NOSOTROS</a>
-                        <a href="/CarritoDeCompras.aspx" class="suave position-relative" title="Ver carrito">
+                        <a href="/Productos.aspx" class="suave linksmenu" title="Ver productos"></i>PRODUCTOS</a>
+                        <a href="/Nosotros.aspx" class="suave linksmenu" title="Sobre Nosotros"></i>NOSOTROS</a>
+                        <a href="/CarritoDeCompras.aspx" class="suave position-relative linksmenu" title="Ver carrito">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                 <%:Cantidad%>
                                 <span class="visually-hidden">items in cart</span>
                             </span>
                         </a>
-                        <% if (Session["usuario"] != null) { %>
-                            <a href="/MiPerfil.aspx" class="suave" title="Mi Perfil">Mi Perfil</a>
-                        <% } %>
                         <% if (Session["usuario"] != null && ((Dominio.Usuario)Session["usuario"]).admin) { %>
-                            <a href="/MiPerfil.aspx" class="suave" title="Menu Administrador"><i class="fa-solid fa-bars"></i>Administrador </a>
+                            <a href="/MiPerfil.aspx" class="linksmenu" title="Menu Administrador">Administrador </a>
                         <% } %>
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                             <div class="btn-group" role="group">
                                 <% if (Session["usuario"] == null) { %>
-                                    <button id="botonInicio" type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Iniciar Sesión
-                                    </button>
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item dropdown">
-                                            <ul class="dropdown-menu dropdown-menu-dark fondo-secciones">
-                                                <li><a class="dropdown-item" href="IniciarSesion.aspx">Ya tengo una cuenta</a></li>
-                                                <li><a class="dropdown-item" href="Registrarse.aspx">Registrarme</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <a class="suave linksmenu" href="IniciarSesion.aspx" title="Ingresar a tu cuenta o registrarse"><i class="fa-solid fa-user"></i></a>
                                 <% } else { %>
-                                    <asp:Image ID="imgPerfil" Style="height: 40px; width: 40px; border-radius: 50%; margin-right: 10px;"
+                                    <div class="dropdown">
+                                      <button class="btn btn-dark dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <asp:Image ID="imgPerfil" Style="height: 40px; width: 40px; border-radius: 50%; margin-right: 10px;"
                                         ImageUrl="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg"
                                         runat="server" />
-                                    <asp:Button Text="Salir" ID="btnSalir" CssClass="btn btn-light me-2" OnClick="btnSalir_Click" runat="server" />
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/MiPerfil.aspx">Mi Perfil</a></li>
+                                        <li><a class="dropdown-item" href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click();">Salir</a></li>
+                                        <asp:Button Text="Salir" ID="Button1" CssClass="d-none" OnClick="btnSalir_Click" runat="server" />
+                                      </ul>
+                                    </div>
+
+
+
                                 <% } %>
                             </div>
                         </div>
