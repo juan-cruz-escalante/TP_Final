@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\escal\\Desktop\\TP_Final\\",
+  "WorkspaceRootPath": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\TP_Final\\webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|solutionrelative:negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\TP_Final\\webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\iniciarsesion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\iniciarsesion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\iniciarsesion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\iniciarsesion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\TP_Final\\webapplication\\contenido\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\contenido\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\TP_Final\\webapplication\\carritodecompras.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\carritodecompras.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\TP_Final\\webapplication\\carritodecompras.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\carritodecompras.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,65 +46,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MasterPrincipal.Master",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\MasterPrincipal.Master",
-              "RelativeDocumentMoniker": "WebApplication\\MasterPrincipal.Master",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\MasterPrincipal.Master",
-              "RelativeToolTip": "WebApplication\\MasterPrincipal.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-16T22:14:18.98Z",
+              "DocumentIndex": 0,
+              "Title": "UsuarioNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\Negocio\\UsuarioNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\UsuarioNegocio.cs",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\Negocio\\UsuarioNegocio.cs",
+              "RelativeToolTip": "Negocio\\UsuarioNegocio.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAQwD4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T00:09:42.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Nosotros.aspx",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\Nosotros.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\Nosotros.aspx",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\Nosotros.aspx",
-              "RelativeToolTip": "WebApplication\\Nosotros.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-16T22:04:56.257Z",
+              "DocumentIndex": 1,
+              "Title": "IniciarSesion.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\IniciarSesion.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\IniciarSesion.aspx.cs",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\IniciarSesion.aspx.cs",
+              "RelativeToolTip": "WebApplication\\IniciarSesion.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T00:01:51.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "estilo.css",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\Contenido\\estilo.css",
-              "RelativeDocumentMoniker": "WebApplication\\Contenido\\estilo.css",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\Contenido\\estilo.css",
-              "RelativeToolTip": "WebApplication\\Contenido\\estilo.css",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAG0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-16T22:04:16.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CarritoDeCompras.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\CarritoDeCompras.aspx.cs",
-              "RelativeDocumentMoniker": "WebApplication\\CarritoDeCompras.aspx.cs",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\CarritoDeCompras.aspx.cs",
-              "RelativeToolTip": "WebApplication\\CarritoDeCompras.aspx.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAqwGoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T21:55:06.683Z"
+              "Title": "IniciarSesion.aspx",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\IniciarSesion.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\IniciarSesion.aspx",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\IniciarSesion.aspx",
+              "RelativeToolTip": "WebApplication\\IniciarSesion.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-07-19T00:01:50.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CarritoDeCompras.aspx",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\CarritoDeCompras.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\CarritoDeCompras.aspx",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\TP_Final\\WebApplication\\CarritoDeCompras.aspx",
-              "RelativeToolTip": "WebApplication\\CarritoDeCompras.aspx",
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\Negocio\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "Negocio\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\Negocio\\AccesoDatos.cs",
+              "RelativeToolTip": "Negocio\\AccesoDatos.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T18:52:16.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MasterPrincipal.Master",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\MasterPrincipal.Master",
+              "RelativeDocumentMoniker": "WebApplication\\MasterPrincipal.Master",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\MasterPrincipal.Master",
+              "RelativeToolTip": "WebApplication\\MasterPrincipal.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-16T21:55:06.034Z"
+              "WhenOpened": "2024-07-16T22:14:18.98Z",
+              "EditorCaption": ""
             }
           ]
         }

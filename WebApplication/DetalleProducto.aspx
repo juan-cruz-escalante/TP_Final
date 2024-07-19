@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPrincipal.Master" AutoEventWireup="true" CodeBehind="DetalleProducto.aspx.cs" Inherits="WebApplication.DetalleProducto" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -13,6 +14,10 @@
                 <p class="fs-4">Marca: <%: ArticuloDetalle.Marca%></p>
                 <p class="fs-4">Precio: $<%: String.Format("{0:N2}", ArticuloDetalle.Precio) %></p>
                 <asp:Button Text="Añadir al carrito" CssClass="btn btn-success" runat="server" ID="AgregarCarrito" CommandArgument='<%: ArticuloDetalle.IdArticulo%>' CommandName="IdArt" OnClick="AgregarCarrito_Click" />
+                <asp:Label ID="lblError" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
+                <br />
+                <br />
+                <a href="Productos.aspx" class="btn btn-success">Volver</a>
             </div>
         </div>
     </div>

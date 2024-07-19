@@ -61,14 +61,12 @@ namespace Negocio
                 datos.ejecutarLectura();
                 while (datos.Lector.Read())
                 {
-                    usuario.Id = (int)datos.Lector["ID"];
-                    usuario.admin = (bool)datos.Lector["Adm"];
-                    usuario.Apellidos = (string)datos.Lector["Apellidos"];
-                    usuario.Nombres = (string)datos.Lector["Nombres"];
-                    if (!(datos.Lector["ImagenUrl"] is DBNull))
-                    {
-                    usuario.ImagenUrl = (string)datos.Lector["ImagenUrl"];
-                    }
+                    usuario.Id = Convert.ToInt32(datos.Lector["ID"]);
+                    usuario.admin = Convert.ToBoolean(datos.Lector["Adm"]);
+                    usuario.Apellidos = datos.Lector["Apellidos"] == DBNull.Value ? string.Empty : Convert.ToString(datos.Lector["Apellidos"]);
+                    usuario.Nombres = datos.Lector["Nombres"] == DBNull.Value ? string.Empty : Convert.ToString(datos.Lector["Nombres"]);
+                    usuario.ImagenUrl = datos.Lector["ImagenUrl"] == DBNull.Value ? string.Empty : Convert.ToString(datos.Lector["ImagenUrl"]);
+
                     if (!(datos.Lector["Nacimiento"] is DBNull))
                     {
                         usuario.FechaNacimiento = DateTime.Parse(datos.Lector["Nacimiento"].ToString());

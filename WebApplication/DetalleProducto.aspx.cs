@@ -39,24 +39,32 @@ namespace WebApplication
 
         protected void AgregarCarrito_Click(object sender, EventArgs e)
         {
-            if (Session["Carrito"] == null)
+            if (Session["usuario"] != null)
             {
-                Session["Carrito"] = new List<Articulos>();
-            }
-            Carrito = (List<Articulos>)Session["Carrito"];
-            bool existeEnCarrito = Carrito.Any(x => x.IdArticulo == ArticuloDetalle.IdArticulo);
 
-            if (!existeEnCarrito)
-            {
-                Carrito.Add(ArticuloDetalle);
-                Session["Carrito"] = Carrito;
+                if (Session["Carrito"] == null)
+                {
+                    Session["Carrito"] = new List<Articulos>();
+                }
+                Carrito = (List<Articulos>)Session["Carrito"];
+                bool existeEnCarrito = Carrito.Any(x => x.IdArticulo == ArticuloDetalle.IdArticulo);
+
+                if (!existeEnCarrito)
+                {
+                    Carrito.Add(ArticuloDetalle);
+                    Session["Carrito"] = Carrito;
+                }
+                else
+                {
+                    ArticuloDetalle.contador++;
+                    Session["Carrito"] = Carrito;
+                }
             }
             else
             {
-                ArticuloDetalle.contador++;
-                Session["Carrito"] = Carrito;
+                lblError.Text = "Para agregar al carrito debe inicar sesion o crear una cuenta";
+                lblError.Visible = true;
             }
-            
         }
     }
 }

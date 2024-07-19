@@ -24,9 +24,15 @@ namespace WebApplication
                 string email = txtEmail.Text;
                 string _pass = txtPassword.Text;
 
-                    if (!email.Contains("@") || !email.Contains("."))
+                if (!email.Contains("@") || !email.Contains("."))
                 {
                     lblErrorMail.Text = "Correo electrónico inválido";
+                    lblErrorMail.Visible = true;
+                    return;
+                }
+                if (_pass == "")
+                {
+                    lblErrorMail.Text = "Por favor registre una contraseña";
                     lblErrorMail.Visible = true;
                     return;
                 }
@@ -43,16 +49,14 @@ namespace WebApplication
                 {
                     emailService.armarCorreo(user.User, "Bienvenida", "Hola, ¡bienvenido a nuestra aplicación!");
                     emailService.enviarEmail();
+
                     lblDatosVacios.Text = "¡Ya estás registrado! Se ha enviado un correo de confirmación.";
                     lblDatosVacios.Visible = true;
+
                     usuario = new Usuario(email, _pass);
                     Session.Add("usuario", usuario);
-                    Response.Redirect("Inicio.aspx", false);
-                }
-                else
-                {
-                    lblDatosVacios.Visible = false;
-                    throw new Exception("Error al insertar usuario en la base de datos.");
+
+                    ScriptManager.RegisterStartupScript(this, GetType(), "redirect", "setTimeout(function(){ window.location.href = 'Inicio.aspx'; }, 2000);", true);
                 }
             }
             catch (Exception ex)

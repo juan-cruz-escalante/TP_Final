@@ -40,7 +40,7 @@
     <div class="position-relative">
         <!-- boton de volver -->
         <div class="position-absolute top-0 start-0">
-            <asp:LinkButton ID="btnRegresar" runat="server" CssClass="btn btn-danger" OnClick="btnRegresar_Click">
+            <asp:LinkButton ID="btnRegresar" runat="server" CssClass="btn btn-success" OnClick="btnRegresar_Click">
                 <i class="fa-solid fa-arrow-left"></i> Volver
             </asp:LinkButton>
         </div>

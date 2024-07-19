@@ -17,7 +17,7 @@
     <form runat="server">
         <section id="minimenu" class="fondo-secciones">
             <header>
-                <div class="text-bg-danger p-3>
+                <div class="text-bg-dark p-3>
                     <ul class="navbar-nav">
                         <h1 class="display-3">Extremas.Net</h1>
                     </ul>
