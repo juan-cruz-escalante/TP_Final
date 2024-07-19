@@ -12,12 +12,12 @@
                 <h1 class="fs-1"><%: ArticuloDetalle.Nombre %></h1>
                 <p class="fs-4">Descripción: <%: ArticuloDetalle.Descripcion %></p>
                 <p class="fs-4">Marca: <%: ArticuloDetalle.Marca%></p>
-                <p class="fs-4">Precio: $<%: String.Format("{0:N2}", ArticuloDetalle.Precio) %></p>
+                <p class="fs-4">Precio: $<%: String.Format("0", ArticuloDetalle.Precio) %></p>
                 <asp:Button Text="Añadir al carrito" CssClass="btn btn-success" runat="server" ID="AgregarCarrito" CommandArgument='<%: ArticuloDetalle.IdArticulo%>' CommandName="IdArt" OnClick="AgregarCarrito_Click" />
                 <asp:Label ID="lblError" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
                 <br />
                 <br />
-                <a href="Productos.aspx" class="btn btn-success">Volver</a>
+                <a href="Productos.aspx" class="btn btn-dark">Volver</a>
             </div>
         </div>
     </div>

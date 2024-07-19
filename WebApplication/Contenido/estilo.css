@@ -131,4 +131,20 @@
     border: 5px solid #ddd;
     border-radius: 30px;
 }
-
+#divCentralizado {
+    position: fixed;
+    top: 50%;
+    right: 400px; /* Ajustar según necesidad */
+    transform: translateY(-50%);
+    max-width: 600px; /* Ajustar según necesidad */
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+/* Estilos para los botones */
+#divCentralizado .btn {
+    font-size: 18px; /* Tamaño de la letra */
+    padding: 10px 20px; /* Espaciado interno */
+}

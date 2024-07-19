@@ -5,7 +5,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server" />
-    
+
     <br />
     <div class="container">
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -29,19 +29,25 @@
                                             <asp:Button Text="-" CssClass="btn btn-outline-danger" runat="server" ID="RestarButton" CommandArgument='<%# Eval("IdArticulo") %>'
                                                 CommandName="RestarArticulo" OnClick="RestarArticulo_Click" />
                                         </div>
-                                        <br /><br />
+                                        <br />
+                                        <br />
                                         <asp:Button Text="Eliminar del carrito" CssClass="btn btn-danger" runat="server" ID="EliminarArticulo" CommandArgument='<%# Eval("IdArticulo") %>'
                                             CommandName="IdArt" OnClick="EliminarArticulo_Click" />
-                                        <br /><br /><br /><br />
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <br />
                                     </div>
                                 </div>
                             </div>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
-                
+
                 <!-- Panel para mostrar el total -->
-                <% if(total != 0) { %>
+
+                <% if (total != 0)
+                    { %>
                 <asp:Panel ID="divTotal" runat="server" Visible="true">
                     <div class="row mt-4">
                         <div class="col text-center">
@@ -53,15 +59,34 @@
                         </div>
                     </div>
                 </asp:Panel>
-                <% } else { %>
+                <% }
+                    else
+                    {
+                        if (Session["usuario"] == null)
+                        { %>
+                <div class="col text-center">
+                    <asp:Label ID="lblError" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
+                    <br />
+                    <br />
+                    <a href="IniciarSesion.aspx" class="btn btn-dark">Inicar Sesion</a>
+                    <a href="Registrarse.aspx" class="btn btn-dark">Registrarse</a>
+                    <a href="Productos.aspx" class="btn btn-dark">Volver</a>
+                </div>
+                <% }
+                    else
+                    { %>
                 <br />
-                    <div class="col text-center">
-                        <h1 class="btn btn-info">El carrito esta vacio</h1>
-                    </div>
+                <div class="col text-center">
+                    <h1 id="H1" class="btn btn-info">El carrito esta vacio</h1>
+                </div>
+                <%}
+                    }%>
                 <br />
-                <% } %>
             </ContentTemplate>
         </asp:UpdatePanel>
     </div>
-    <br /><br /><br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
 </asp:Content>

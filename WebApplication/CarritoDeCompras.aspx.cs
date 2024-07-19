@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocio;
 using Dominio;
+using System.Data.SqlClient;
 
 namespace WebApplication
 {
@@ -96,12 +97,30 @@ namespace WebApplication
         private void ActualizarTotal()
         {
             total = Carrito.Sum(x => (decimal)x.Precio * x.contador);
-            lblTotal.Text = total.ToString("{0:N2}");
+            lblTotal.Text = total.ToString("0");
         }
 
         protected void Finalizar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (Session["usuario"] != null)
+                {
+                    lblError.Text = "Bien hecho";
+                    lblError.Visible = true;
+                }
+                else
+                {
+                    lblError.Text = "Para agregar al carrito debe iniciar sesión o crear una cuenta";
+                    lblError.Visible = true;
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                lblError.Text = "Ocurrió un error al intentar finalizar la compra. Por favor, inténtelo nuevamente.";
+                lblError.Visible = true;
+            }
         }
     }
 }
