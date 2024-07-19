@@ -96,7 +96,7 @@ namespace WebApplication
         private void ActualizarTotal()
         {
             total = Carrito.Sum(x => (decimal)x.Precio * x.contador);
-            lblTotal.Text = total.ToString("F2");
+            lblTotal.Text = total.ToString("{0:N2}");
         }
 
         protected void Finalizar_Click(object sender, EventArgs e)
