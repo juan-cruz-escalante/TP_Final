@@ -8,7 +8,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner" data-bs-ride="carousel">
             <div class="carousel-item active">
                 <a href="Productos.aspx?opcion=2">
                   <img src="Contenido/10.png" class="d-block w-100" alt="...">
@@ -59,7 +59,7 @@
           <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner" data-bs-ride="carousel">
           <div class="carousel-item active">
               <a href="Productos.aspx?opcion=6">
                 <img src="Contenido/20.png" class="d-block w-100" alt="...">
@@ -107,7 +107,7 @@
         <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" data-bs-ride="carousel">
         <div class="carousel-item active">
             <a href="Productos.aspx?opcion=5">
               <img src="Contenido/30.png" class="d-block w-100" alt="...">

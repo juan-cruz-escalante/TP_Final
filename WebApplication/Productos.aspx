@@ -65,8 +65,9 @@
                         <img src="<%: art.ImagenUrl %>" title="Imagen del producto" class="card-img-top" alt="Imagen no encontrada"
                              onerror="this.onerror=null; this.src='https://www.italfren.com.ar/images/catalogo/imagen-no-disponible.jpeg';">
                         <div class="card-body">
-                          <h5 class="card-title"><%: art.Nombre %></h5>
-                          <p class="fs-4">Precio: $<%: String.Format("{0:N2}", art.Precio) %></p>
+                          <h5 class="fs-4 text-muted mb-3"><strong><%: art.Nombre %></strong></h5>
+                          <p>Marca: <%: art.Marca %></p>
+                          <p class="fs-4 text-success mb-4"><strong>$<%: String.Format("{0:N}", art.Precio) %></strong></p>
                         </div>
                       </div>
                     </a>

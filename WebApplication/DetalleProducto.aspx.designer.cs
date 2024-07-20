@@ -15,6 +15,24 @@ namespace WebApplication
     {
 
         /// <summary>
+        /// ScriptManagerDP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManagerDP;
+
+        /// <summary>
+        /// UpdatePanelDP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanelDP;
+
+        /// <summary>
         /// AgregarCarrito control.
         /// </summary>
         /// <remarks>

@@ -14,7 +14,7 @@
                     <asp:Repeater runat="server" ID="Repetidor">
                         <ItemTemplate>
                             <div class="col">
-                                <div class="card h-100 text-center">
+                                <div class="card h-100 text-center" style="width: 18rem;">
                                     <img src='<%# Eval("ImagenUrl") %>' title="Imagen del producto" class="card-img-top" alt="Imagen no encontrada"
                                         onerror="this.onerror=null; this.src='https://www.italfren.com.ar/images/catalogo/imagen-no-disponible.jpeg';">
                                     <div class="card-body">
@@ -29,14 +29,10 @@
                                             <asp:Button Text="-" CssClass="btn btn-outline-danger" runat="server" ID="RestarButton" CommandArgument='<%# Eval("IdArticulo") %>'
                                                 CommandName="RestarArticulo" OnClick="RestarArticulo_Click" />
                                         </div>
-                                        <br />
-                                        <br />
+                                        <br /><br />
                                         <asp:Button Text="Eliminar del carrito" CssClass="btn btn-danger" runat="server" ID="EliminarArticulo" CommandArgument='<%# Eval("IdArticulo") %>'
                                             CommandName="IdArt" OnClick="EliminarArticulo_Click" />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
+                                        <br /><br /><br /><br />
                                     </div>
                                 </div>
                             </div>
@@ -66,8 +62,7 @@
                         { %>
                 <div class="col text-center">
                     <asp:Label ID="lblError" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
-                    <br />
-                    <br />
+                    <br /><br />
                     <a href="IniciarSesion.aspx" class="btn btn-dark">Inicar Sesion</a>
                     <a href="Registrarse.aspx" class="btn btn-dark">Registrarse</a>
                     <a href="Productos.aspx" class="btn btn-dark">Volver</a>
