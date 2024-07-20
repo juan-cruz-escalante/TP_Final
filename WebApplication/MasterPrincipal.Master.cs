@@ -15,20 +15,19 @@ namespace WebApplication
         public int Cantidad { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*  Creo que esto no deberia ir, el que anade al carrito de compra y no inicio su compra deberia ver que anadio, de ahi a que lo compre no va a poder
-            if ((Page is CarritoDeCompras))
-            {
-                if (!(Seguridad.sesionActiva(Session["usuario"])))
-                {
-                    Response.Redirect("Inicio.aspx");
-                }
-            }*/
+            Usuario usuario = (Usuario)Session["usuario"];
             if (!IsPostBack)
             {
                 if (Session["usuario"] != null)
                 {
-                    Usuario usuario = (Usuario)Session["usuario"];
-                    imgPerfil.ImageUrl = "~/Images/" + usuario.ImagenUrl;
+                    if (!string.IsNullOrEmpty(usuario.ImagenUrl))
+                    {
+                        imgPerfil.ImageUrl = "~/Images/" + usuario.ImagenUrl;
+                    }
+                    else
+                    {
+                        imgPerfil.ImageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOX4mkcW8pH9FbpI9rTBkokiMxSY2GJ3eyw&s";
+                    }
 
                     if (!string.IsNullOrEmpty(usuario.Nombres) && !string.IsNullOrEmpty(usuario.Apellidos))
                     {
@@ -38,10 +37,6 @@ namespace WebApplication
                     {
                         txtUser.Text = usuario.User;
                     }
-                }
-                else
-                {
-                    imgPerfil.ImageUrl = "https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_user_profile_avatar_person_icon_208734.png";
                 }
             }
 

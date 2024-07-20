@@ -33,10 +33,6 @@
                                 <span class="visually-hidden">items in cart</span>
                             </span>
                         </a>
-                        <% if (Session["usuario"] != null && ((Dominio.Usuario)Session["usuario"]).admin)
-                            { %>
-                        <a href="/MiPerfil.aspx" class="linksmenu" title="Menu Administrador">Administrador </a>
-                        <% } %>
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                             <div class="btn-group" role="group">
                                 <% if (Session["usuario"] == null)
@@ -54,6 +50,11 @@
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="/MiPerfil.aspx">Mi Perfil</a></li>
+                                        <% if (Session["usuario"] != null && ((Dominio.Usuario)Session["usuario"]).admin)
+                                            { %>
+                                        <li><a class="dropdown-item" href="/CarritoDeCompras.aspx">Administración</a></li>
+<%--                                        <a href="/MiPerfil.aspx" class="linksmenu" title="Menu Administrador">Administrador </a>--%>
+                                        <% } %>
                                         <li><a class="dropdown-item" href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click();">Cerrar Sesión</a></li>
                                         <asp:Button Text="Salir" ID="Button1" CssClass="d-none" OnClick="btnSalir_Click" runat="server" />
                                     </ul>

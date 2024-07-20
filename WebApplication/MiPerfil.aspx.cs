@@ -25,12 +25,17 @@ namespace WebApplication
                         txtApellidos.Text = aux.Apellidos;
                         txtNombres.Text = aux.Nombres;
                         txtFechaNacimiento.Text = aux.FechaNacimiento.ToString("yyyy-MM-dd");
+                    }
+
+                    if (!string.IsNullOrEmpty(aux.ImagenUrl))
+                    {
                         imgNuevoPerfil.ImageUrl = "~/Images/" + aux.ImagenUrl;
                     }
                     else
                     {
                         imgNuevoPerfil.ImageUrl = "https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_user_profile_avatar_person_icon_208734.png";
                     }
+
                 }
             }
             catch (Exception ex)
@@ -45,20 +50,28 @@ namespace WebApplication
             {
                 UsuarioNegocio negocio = new UsuarioNegocio();
                 Usuario aux = (Usuario)Session["usuario"];
-                string ruta = Server.MapPath("./Images/");
-                txtImagen.PostedFile.SaveAs(ruta + "perfil-" + aux.Id + ".png");
 
+                string ruta = Server.MapPath("./Images/");
+
+                // Verificar si se ha seleccionado un archivo para la imagen
+                if (txtImagen.PostedFile != null && txtImagen.PostedFile.ContentLength > 0)
+                {
+                    // Guardar el archivo de imagen
+                    txtImagen.PostedFile.SaveAs(ruta + "perfil-" + aux.Id + ".png");
+                    aux.ImagenUrl = "perfil-" + aux.Id + ".png";
+                }
+
+                // Actualizar otros campos del usuario
                 aux.Pass = txtPass.Text;
                 aux.Nombres = txtNombres.Text;
                 aux.Apellidos = txtApellidos.Text;
-                aux.ImagenUrl = "perfil-" + aux.Id + ".png";
                 aux.FechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text);
 
                 negocio.Actualizar(aux);
 
+                // Actualizar la imagen en la página maestra
                 Image img = (Image)Master.FindControl("imgPerfil");
                 img.ImageUrl = "~/Images/" + aux.ImagenUrl;
-
             }
             catch (Exception ex)
             {
@@ -66,4 +79,3 @@ namespace WebApplication
             }
         }
     }
-}

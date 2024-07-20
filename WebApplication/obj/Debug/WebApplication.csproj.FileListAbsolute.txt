@@ -381,3 +381,8 @@ C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\Newtonsoft.Json.dll
 C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\MercadoPago.pdb
 C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\MercadoPago.xml
 C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\Newtonsoft.Json.xml
+C:\Users\escal\Desktop\BackUp TP_Final - copia\WebApplication\bin\MercadoPago.dll
+C:\Users\escal\Desktop\BackUp TP_Final - copia\WebApplication\bin\Newtonsoft.Json.dll
+C:\Users\escal\Desktop\BackUp TP_Final - copia\WebApplication\bin\MercadoPago.pdb
+C:\Users\escal\Desktop\BackUp TP_Final - copia\WebApplication\bin\MercadoPago.xml
+C:\Users\escal\Desktop\BackUp TP_Final - copia\WebApplication\bin\Newtonsoft.Json.xml
