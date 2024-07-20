@@ -50,7 +50,6 @@
                                 <div class="dropdown">
                                     <button class="btn btn-dark dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <asp:Image ID="imgPerfil" Style="height: 40px; width: 40px; border-radius: 50%; margin-right: 10px;"
-                                            ImageUrl="https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_user_profile_avatar_person_icon_208734.png"
                                             runat="server" />
                                     </button>
                                     <ul class="dropdown-menu">
