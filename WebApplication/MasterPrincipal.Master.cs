@@ -5,7 +5,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Dominio;
 using Negocio;
 
 namespace WebApplication
@@ -16,13 +15,33 @@ namespace WebApplication
         public int Cantidad { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["usuario"] != null)
+            if ((Page is CarritoDeCompras))
             {
-                imgPerfil.ImageUrl = ((Dominio.Usuario)Session["usuario"]).ImagenUrl;
+                if (!(Seguridad.sesionActiva(Session["usuario"])))
+                {
+                    Response.Redirect("Inicio.aspx");
+                }
             }
-            else
+            if (!IsPostBack)
             {
-                imgPerfil.ImageUrl = "https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg";
+                if (Session["usuario"] != null)
+                {
+                    Usuario usuario = (Usuario)Session["usuario"];
+                    imgPerfil.ImageUrl = "~/Images/" + usuario.ImagenUrl;
+
+                    if (!string.IsNullOrEmpty(usuario.Nombres) && !string.IsNullOrEmpty(usuario.Apellidos))
+                    {
+                        txtUser.Text = usuario.Nombres + " " + usuario.Apellidos;
+                    }
+                    else
+                    {
+                        txtUser.Text = usuario.User;
+                    }
+                }
+                else
+                {
+                    imgPerfil.ImageUrl = "https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_user_profile_avatar_person_icon_208734.png";
+                }
             }
 
             if (Session["Carrito"] != null)

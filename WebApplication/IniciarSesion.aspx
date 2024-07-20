@@ -34,9 +34,9 @@
                         <asp:Label ID="lblDatosVacios" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
                     </div>
                 </form>
-                <div class="text-center mt-3" style="color: black;">
+<%--                <div class="text-center mt-3" style="color: black;">
                     <a href="#" style="color: black;">¿Olvidó su contraseña?</a>
-                </div>
+                </div>--%>
                 <div class="text-center mt-3" style="color: black;">
                     ¿No tienes una cuenta? <a href="Registrarse.aspx" style="color: black;">Regístrate</a>
                 </div>

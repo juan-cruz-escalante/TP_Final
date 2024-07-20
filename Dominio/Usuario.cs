@@ -21,10 +21,6 @@ namespace Dominio
         { 
             User = user; 
             Pass = pass;
-            Nombres = "Sin datos";
-            Apellidos = "Sin datos";
-            this.FechaNacimiento = DateTime.MinValue;
-            ImagenUrl = "Sin imagen";
         }
         public Usuario()
         {

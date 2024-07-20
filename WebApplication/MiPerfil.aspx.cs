@@ -14,20 +14,25 @@ namespace WebApplication
         protected void Page_Load(object sender, EventArgs e)
         {
             Usuario aux = (Usuario)Session["usuario"];
-            UsuarioNegocio negocio = new UsuarioNegocio();
             try
             {
                 if (!IsPostBack)
                 {
-                    if (Session["usuario"] != null)
+                    if (Seguridad.sesionActiva(Session["usuario"]))
                     {
                         txtUser.Text = aux.User;
                         txtPass.Text = aux.Pass;
                         txtApellidos.Text = aux.Apellidos;
                         txtNombres.Text = aux.Nombres;
+                        txtFechaNacimiento.Text = aux.FechaNacimiento.ToString("yyyy-MM-dd");
+                        imgNuevoPerfil.ImageUrl = "~/Images/" + aux.ImagenUrl;
+                    }
+                    else
+                    {
+                        imgNuevoPerfil.ImageUrl = "https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_user_profile_avatar_person_icon_208734.png";
                     }
                 }
-            } 
+            }
             catch (Exception ex)
             {
                 Session.Add("error", ex.ToString());
@@ -39,16 +44,20 @@ namespace WebApplication
             try
             {
                 UsuarioNegocio negocio = new UsuarioNegocio();
-                string ruta = Server.MapPath("./Images/");
                 Usuario aux = (Usuario)Session["usuario"];
-                txtImagen.PostedFile.SaveAs(ruta + "perfil-" + aux.Id + ".jpg");
+                string ruta = Server.MapPath("./Images/");
+                txtImagen.PostedFile.SaveAs(ruta + "perfil-" + aux.Id + ".png");
 
-                aux.Apellidos = txtApellidos.Text;
+                aux.Pass = txtPass.Text;
                 aux.Nombres = txtNombres.Text;
-                aux.ImagenUrl = "perfil-" + aux.Id + ".jpg";
-                aux.FechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text);  
+                aux.Apellidos = txtApellidos.Text;
+                aux.ImagenUrl = "perfil-" + aux.Id + ".png";
+                aux.FechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text);
 
                 negocio.Actualizar(aux);
+
+                Image img = (Image)Master.FindControl("imgPerfil");
+                img.ImageUrl = "~/Images/" + aux.ImagenUrl;
 
             }
             catch (Exception ex)

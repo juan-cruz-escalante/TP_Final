@@ -22,3 +22,9 @@ C:\Users\MrOmar95\Desktop\Proyectos PROGRA3\TP_Final\Dominio\obj\Debug\Dominio.c
 C:\Users\MrOmar95\Desktop\Proyectos PROGRA3\TP_Final\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\MrOmar95\Desktop\Proyectos PROGRA3\TP_Final\Dominio\obj\Debug\Dominio.dll
 C:\Users\MrOmar95\Desktop\Proyectos PROGRA3\TP_Final\Dominio\obj\Debug\Dominio.pdb
+C:\Users\escal\Desktop\BackUp TP_Final\Dominio\bin\Debug\Dominio.dll
+C:\Users\escal\Desktop\BackUp TP_Final\Dominio\bin\Debug\Dominio.pdb
+C:\Users\escal\Desktop\BackUp TP_Final\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\escal\Desktop\BackUp TP_Final\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\escal\Desktop\BackUp TP_Final\Dominio\obj\Debug\Dominio.dll
+C:\Users\escal\Desktop\BackUp TP_Final\Dominio\obj\Debug\Dominio.pdb
