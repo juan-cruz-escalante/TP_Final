@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocio;
 using Dominio;
-using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 namespace WebApplication
 {
@@ -14,13 +14,15 @@ namespace WebApplication
     {
         public List<Articulos> Carrito { get; set; }
         public decimal total { get; set; }
-        protected void Page_Load(object sender, EventArgs e)
+
+        protected async void Page_Load(object sender, EventArgs e)
         {
             if (Session["Carrito"] == null)
             {
                 Session["Carrito"] = new List<Articulos>();
             }
             Carrito = (List<Articulos>)Session["Carrito"];
+
             if (Request.QueryString["id"] != null && int.TryParse(Request.QueryString["id"], out int id))
             {
                 if (Session["Productos"] != null)
@@ -35,11 +37,13 @@ namespace WebApplication
                     }
                 }
             }
+
             if (!IsPostBack)
             {
                 Repetidor.DataSource = Carrito;
                 Repetidor.DataBind();
                 ActualizarTotal();
+                await GenerarPreferenceId();
 
                 if (Carrito.Count == 0)
                 {
@@ -76,6 +80,7 @@ namespace WebApplication
                 ActualizarTotal();
             }
         }
+
         protected void RestarArticulo_Click(object sender, EventArgs e)
         {
             int idArticulo = Convert.ToInt32(((Button)sender).CommandArgument);
@@ -94,33 +99,30 @@ namespace WebApplication
                 ActualizarTotal();
             }
         }
+
         private void ActualizarTotal()
         {
             total = Carrito.Sum(x => (decimal)x.Precio * x.contador);
             lblTotal.Text = total.ToString("0");
         }
 
-        protected void Finalizar_Click(object sender, EventArgs e)
+        private async Task GenerarPreferenceId()
         {
             try
             {
-                if (Session["usuario"] != null)
-                {
-                    lblError.Text = "Bien hecho";
-                    lblError.Visible = true;
-                }
-                else
-                {
-                    lblError.Text = "Para agregar al carrito debe iniciar sesión o crear una cuenta";
-                    lblError.Visible = true;
-                    return;
-                }
+                var mpBack = new MercadoPagoBack();
+                string preferenceId = await mpBack.CreatePreferenceAsync();
+                Session["preferenceId"] = preferenceId;
             }
             catch (Exception ex)
             {
-                lblError.Text = "Ocurrió un error al intentar finalizar la compra. Por favor, inténtelo nuevamente.";
-                lblError.Visible = true;
+                Console.WriteLine(ex.Message);
             }
+        }
+
+        protected void Finalizar_Click(object sender, EventArgs e)
+        {
+            // Al hacer clic en el botón "Finalizar compra", el script de JavaScript se encargará de iniciar el checkout de Mercado Pago
         }
     }
 }

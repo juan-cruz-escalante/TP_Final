@@ -376,3 +376,8 @@ C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\roslyn\vbc.exe.config
 C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\roslyn\vbc.rsp
 C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\roslyn\VBCSCompiler.exe
 C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\MercadoPago.dll
+C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\Newtonsoft.Json.dll
+C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\MercadoPago.pdb
+C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\MercadoPago.xml
+C:\Users\MrOmar95\Desktop\TP_Final\WebApplication\bin\Newtonsoft.Json.xml

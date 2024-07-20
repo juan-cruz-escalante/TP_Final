@@ -15,13 +15,14 @@ namespace WebApplication
         public int Cantidad { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            /*  Creo que esto no deberia ir, el que anade al carrito de compra y no inicio su compra deberia ver que anadio, de ahi a que lo compre no va a poder
             if ((Page is CarritoDeCompras))
             {
                 if (!(Seguridad.sesionActiva(Session["usuario"])))
                 {
                     Response.Redirect("Inicio.aspx");
                 }
-            }
+            }*/
             if (!IsPostBack)
             {
                 if (Session["usuario"] != null)
