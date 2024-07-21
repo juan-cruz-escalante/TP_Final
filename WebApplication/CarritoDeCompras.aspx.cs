@@ -122,7 +122,6 @@ namespace WebApplication
 
         protected void Finalizar_Click(object sender, EventArgs e)
         {
-            // Al hacer clic en el botón "Finalizar compra", el script de JavaScript se encargará de iniciar el checkout de Mercado Pago
         }
     }
 }
