@@ -103,7 +103,7 @@ namespace WebApplication
         private void ActualizarTotal()
         {
             total = Carrito.Sum(x => (decimal)x.Precio * x.contador);
-            lblTotal.Text = total.ToString("0");
+            lblTotal.Text = total.ToString("N2");
         }
 
         private async Task GenerarPreferenceId()

@@ -59,7 +59,7 @@
                 { %>
                 <div class="container text-center mt-4">
                     <div class="alert alert-light d-inline-flex align-items-center p-3 rounded border-secondary" role="alert">
-                        <i class="fa-solid fa-tag me-2"></i> <!-- Icono opcional -->
+                        <i class="fa-solid fa-tag me-2"></i>
                         <h4 class="mb-0">Total: $<asp:Label ID="lblTotal" runat="server" Text="0"></asp:Label></h4>
                     </div>
                 </div>
