@@ -9,48 +9,68 @@
     <div class="container">
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <asp:Repeater runat="server" ID="Repetidor">
-                        <ItemTemplate>
-                            <div class="col">
-                                <div class="card h-100 text-center" style="width: 18rem;">
-                                    <img src='<%# Eval("ImagenUrl") %>' title="Imagen del producto" class="card-img-top" alt="Imagen no encontrada"
-                                         onerror="this.onerror=null; this.src='https://www.italfren.com.ar/images/catalogo/imagen-no-disponible.jpeg';">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><%# Eval("Nombre") %></h5>
-                                        <p class="card-text">Precio: $<%# Eval("Precio") %></p>
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <asp:Button Text="+" CssClass="btn btn-outline-success" runat="server" ID="AgregarArticulo" CommandArgument='<%# Eval("IdArticulo") %>'
-                                                        CommandName="IdArt" OnClick="AgregarArticulo_Click" />
-                                            <div class="btn btn-success" style="width: 6rem;">
-                                                Cantidad: <%# Eval("contador") %>
-                                            </div>
-                                            <asp:Button Text="-" CssClass="btn btn-outline-danger" runat="server" ID="RestarButton" CommandArgument='<%# Eval("IdArticulo") %>'
-                                                        CommandName="RestarArticulo" OnClick="RestarArticulo_Click" />
-                                        </div>
-                                        <br /><br />
-                                        <asp:Button Text="Eliminar del carrito" CssClass="btn btn-danger" runat="server" ID="EliminarArticulo" CommandArgument='<%# Eval("IdArticulo") %>'
-                                                    CommandName="IdArt" OnClick="EliminarArticulo_Click" />
-                                        <br /><br /><br /><br />
-                                    </div>
+                <div class="container mt-5">
+    <div class="row">
+        <asp:Repeater runat="server" ID="Repetidor">
+            <ItemTemplate>
+                <div class="col-12 mb-3">
+                    <div class="card h-100 position-relative">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src='<%# Eval("ImagenUrl") %>' title="Imagen del producto" class="img-fluid img-thumbnail" 
+                                 alt="Imagen no encontrada"
+                                 style="max-height: 150px; object-fit: cover;"
+                                 onerror="this.onerror=null; this.src='https://www.italfren.com.ar/images/catalogo/imagen-no-disponible.jpeg';">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong><%# Eval("Nombre") %></strong></h5>
+                                    <p class="card-text"><strong>Marca: </strong><%# Eval("Marca") %></p>
+                                    <p class="card-text" style="color: green"><strong>Precio: </strong>$<%# string.Format("{0:N2}", Eval("Precio")) %></p>
                                 </div>
                             </div>
-                        </ItemTemplate>
-                    </asp:Repeater>
+                            <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                                <div class="btn-group mb-2" role="group" aria-label="Basic example">
+                                    <asp:LinkButton CssClass="btn btn-outline-success" runat="server" ID="AgregarArticulo" CommandArgument='<%# Eval("IdArticulo") %>' CommandName="IdArt" OnClick="AgregarArticulo_Click">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </asp:LinkButton>
+                                    <div class="btn btn-success" style="width: 3rem;"><%# Eval("contador") %></div>
+                                    <asp:LinkButton CssClass="btn btn-outline-danger" runat="server" ID="RestarButton" CommandArgument='<%# Eval("IdArticulo") %>' CommandName="RestarArticulo" OnClick="RestarArticulo_Click">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </asp:LinkButton>
+                                </div>
+                            </div>
+                        </div>
+                        <asp:LinkButton CssClass="btn btn-danger position-absolute top-0 end-0 m-2" runat="server" ID="EliminarArticulo" CommandArgument='<%# Eval("IdArticulo") %>'
+                                        CommandName="IdArt" OnClick="EliminarArticulo_Click">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </asp:LinkButton>
+                    </div>
                 </div>
+            </ItemTemplate>
+        </asp:Repeater>
+
+    </div>
+</div>
+
 
                  <!-- Panel para mostrar el total -->
+                <% if (total != 0)
+                { %>
+                <div class="container text-center mt-4">
+                    <div class="alert alert-light d-inline-flex align-items-center p-3 rounded border-secondary" role="alert">
+                        <i class="fa-solid fa-tag me-2"></i> <!-- Icono opcional -->
+                        <h4 class="mb-0">Total: $<asp:Label ID="lblTotal" runat="server" Text="0"></asp:Label></h4>
+                    </div>
+                </div>
 
+                <%}%>
                 <% if (total != 0 && Session["usuario"] != null)
                     { %>
                 <asp:Panel ID="divTotal" runat="server" Visible="true">
                     <div class="row mt-4">
                         <div class="col text-center">
-                            <div class="btn btn-info">
-                                <h4>Total: $<asp:Label ID="lblTotal" runat="server" Text="0"></asp:Label></h4>
-                                <asp:Button Text="Finalizar compra" CssClass="btn btn-primary btn-lg" runat="server" ID="Finalizar"
-                                    CommandArgument='<%# Eval("IdArticulo") %>' CommandName="IdArt" OnClick="Finalizar_Click" />
-                            </div>
+                                <asp:Button Text="Finalizar compra" CssClass="btn btn-success" runat="server" ID="Finalizar" CommandArgument='<%# Eval("IdArticulo") %>' CommandName="IdArt" OnClick="Finalizar_Click" />
                         </div>
                     </div>
                 </asp:Panel>

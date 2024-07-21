@@ -54,7 +54,7 @@ namespace WebApplication
 
         protected void EliminarArticulo_Click(object sender, EventArgs e)
         {
-            int idArticulo = Convert.ToInt32(((Button)sender).CommandArgument);
+            int idArticulo = Convert.ToInt32(((LinkButton)sender).CommandArgument);
             Articulos articuloAEliminar = Carrito.FirstOrDefault(x => x.IdArticulo == idArticulo);
             if (articuloAEliminar != null)
             {
@@ -69,7 +69,7 @@ namespace WebApplication
 
         protected void AgregarArticulo_Click(object sender, EventArgs e)
         {
-            int idArticulo = Convert.ToInt32(((Button)sender).CommandArgument);
+            int idArticulo = Convert.ToInt32(((LinkButton)sender).CommandArgument);
             Articulos articulo = Carrito.FirstOrDefault(x => x.IdArticulo == idArticulo);
             if (articulo != null)
             {
@@ -83,7 +83,7 @@ namespace WebApplication
 
         protected void RestarArticulo_Click(object sender, EventArgs e)
         {
-            int idArticulo = Convert.ToInt32(((Button)sender).CommandArgument);
+            int idArticulo = Convert.ToInt32(((LinkButton)sender).CommandArgument);
             Articulos articulo = Carrito.FirstOrDefault(x => x.IdArticulo == idArticulo);
             if (articulo != null)
             {
