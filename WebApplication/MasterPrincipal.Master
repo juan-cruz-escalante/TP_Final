@@ -52,16 +52,12 @@
                                         <li><a class="dropdown-item" href="/MiPerfil.aspx">Mi Perfil</a></li>
                                         <% if (Session["usuario"] != null && ((Dominio.Usuario)Session["usuario"]).admin)
                                             { %>
-                                        <li><a class="dropdown-item" href="/CarritoDeCompras.aspx">Administración</a></li>
-<%--                                        <a href="/MiPerfil.aspx" class="linksmenu" title="Menu Administrador">Administrador </a>--%>
+                                        <li><a class="dropdown-item" href="/Administrador.aspx">Administración</a></li>
                                         <% } %>
                                         <li><a class="dropdown-item" href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click();">Cerrar Sesión</a></li>
                                         <asp:Button Text="Salir" ID="Button1" CssClass="d-none" OnClick="btnSalir_Click" runat="server" />
                                     </ul>
                                 </div>
-
-
-
                                 <% } %>
                             </div>
                         </div>

@@ -17,7 +17,7 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("Select ID, Usuario, Pass, TipoUsuario, Apellidos, Nombres, Nacimiento, Adm, ImagenUrl from Usuarios");
+                datos.setearConsulta("Select ID, Usuario, Pass, Apellidos, Nombres, Nacimiento, Adm, ImagenUrl from Usuarios");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
