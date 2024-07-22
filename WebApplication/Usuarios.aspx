@@ -6,8 +6,8 @@
 
     <br />
     <br />
-    <div class="row">
-        <div class="col">
+    <div class="container mt-4">
+        <div class="table-responsive">
             <asp:GridView ID="dgvUsuarios" DataKeyNames="ID" OnSelectedIndexChanged="dgvUsuarios_SelectedIndexChanged" runat="server" AutoGenerateColumns="false" CssClass="table table-dark table-bordered">
                 <Columns>
                     <asp:BoundField HeaderText="ID" DataField="ID" />
@@ -15,9 +15,30 @@
                     <asp:BoundField HeaderText="Nombres" DataField="Nombres" />
                     <asp:BoundField HeaderText="Apellidos" DataField="Apellidos" />
                     <asp:CheckBoxField HeaderText="Administrador" DataField="admin" />
-                    <asp:CommandField ShowSelectButton="true" SelectText="Seleccionar" HeaderText="Editar" />
+                    <asp:TemplateField HeaderText="Editar">
+                        <ItemTemplate>
+                            <asp:LinkButton runat="server" CommandName="Select" CommandArgument='<%# Eval("ID") %>' CssClass="btn btn-outline-primary btn-sm">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <span class="visually-hidden">Editar</span>
+                            </asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Borrar">
+                        <ItemTemplate>
+                            <asp:LinkButton runat="server" CommandName="Select" CommandArgument='<%# Eval("ID") %>' CssClass="btn btn-outline-danger btn-sm">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span class="visually-hidden">Borrar</span>
+                            </asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
         </div>
+        <div class="text-end mb-4">
+            <a href="No se como lo haras pero lo pense como un link" class="btn btn-success btn-lg">
+                <i class="fa-solid fa-user-plus"></i> 
+            </a>
+        </div>
     </div>
+
 </asp:Content>
