@@ -8,8 +8,10 @@ namespace WebApplication
 {
     public partial class EditarUsuario : System.Web.UI.Page
     {
+        public bool ConfirmaEliminacion { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            ConfirmaEliminacion = false;
             if (!IsPostBack)
             {
                 int id;
@@ -20,7 +22,6 @@ namespace WebApplication
                     if (usuarioActual != null)
                     {
                         CargarDatosUsuario(usuarioActual);
-                        // Guardar el ID en la sesión para usarlo al guardar
                         Session["usuarioID"] = id;
                     }
                     else
@@ -100,6 +101,36 @@ namespace WebApplication
             catch (Exception ex)
             {
                 lblMensaje.Text = "Error al guardar los datos: " + ex.Message;
+                lblMensaje.Visible = true;
+            }
+        }
+
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ConfirmaEliminacion = true;
+        }
+
+        protected void btnConfirmarEliminacion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (chkConfirmaEliminacion.Checked)
+                {
+                    UsuarioNegocio negocio = new UsuarioNegocio();
+                    if (negocio.eliminar((int)Session["usuarioID"]))
+                    {
+                        Response.Redirect("Usuarios.aspx?msg=eliminado");
+                    }
+                    else
+                    {
+                        lblMensaje.Text = "Error al eliminar el registro.";
+                        lblMensaje.Visible = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                lblMensaje.Text = "Error: " + ex.Message;
                 lblMensaje.Visible = true;
             }
         }
