@@ -37,14 +37,6 @@
                             </asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Borrar">
-                        <ItemTemplate>
-                            <asp:LinkButton runat="server" CommandName="Select" CommandArgument='<%# Eval("IdArticulo") %>' CssClass="btn btn-outline-danger btn-sm">
-                                <i class="fa-solid fa-trash-can"></i>
-                                <span class="visually-hidden">Borrar</span>
-                            </asp:LinkButton>
-                        </ItemTemplate>
-                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
         </div>

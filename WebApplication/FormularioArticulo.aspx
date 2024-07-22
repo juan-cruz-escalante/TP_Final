@@ -42,8 +42,16 @@
                             <label for="txtUrl">URL Imagen</label>
                         </div>
                         <div class="mb-3 form-floating">
-                            <asp:Image ImageUrl="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg" runat="server" ID="imgArticulo" Style="max-width: 100%; height: auto;" />
+                            <asp:Image ImageUrl="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg" runat="server" ID="imgArticulo" CssClass="img-fluid mb-3" Style="max-width: 100%; height: auto;" />
                         </div>
+                        <asp:Button Text="Eliminar" ID="Button2" OnClick="btnEliminar_Click" CssClass="btn btn-danger float-end mb-3" runat="server" />
+                        <% if (ConfirmaEliminacion)
+                            { %>
+                        <div class="mb-3">
+                            <asp:CheckBox Text="Confirmar Eliminación" ID="chkConfirmaEliminacion" runat="server" />
+                            <asp:Button Text="Eliminar" ID="btnConfirmarEliminacion" OnClick="btnConfirmarEliminacion_Click" CssClass="btn btn-outline-danger" runat="server" />
+                        </div>
+                        <% } %>
                     </ContentTemplate>
                 </asp:UpdatePanel>
             </div>
@@ -51,12 +59,13 @@
 
         <!-- Guardar o volver -->
         <div class="row mt-4">
-            <div class="col-md-12 d-flex justify-content-center">
+            <div class="col-md-6 d-flex justify-content-start">
                 <div>
                     <asp:Button Text="Guardar" CssClass="btn btn-danger btn-lg me-2" OnClick="btnGuardar_Click" ID="btnGuardar" runat="server" />
                     <a href="ArticulosAdmin.aspx" class="btn btn-success">Volver</a>
                 </div>
             </div>
+            <asp:Label ID="lblMensaje" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
         </div>
     </div>
 </asp:Content>

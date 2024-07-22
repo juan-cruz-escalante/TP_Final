@@ -40,7 +40,8 @@ namespace WebApplication
 
         protected void dgvArticulos_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            var id = dgvArticulos.SelectedDataKey.Value.ToString();
+            Response.Redirect("FormularioArticulo.aspx?ID=" + id);
         }
     }
 }

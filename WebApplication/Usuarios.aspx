@@ -15,7 +15,7 @@
                     <asp:BoundField HeaderText="Nombres" DataField="Nombres" />
                     <asp:BoundField HeaderText="Apellidos" DataField="Apellidos" />
                     <asp:CheckBoxField HeaderText="Administrador" DataField="admin" />
-                    <asp:TemplateField HeaderText="Editar / Eliminar">
+                    <asp:TemplateField HeaderText="Editar">
                         <ItemTemplate>
                             <asp:LinkButton runat="server" CommandName="Select" CommandArgument='<%# Eval("ID") %>' CssClass="btn btn-outline-primary btn-sm">
                                 <i class="fa-solid fa-pen-to-square"></i>
@@ -23,14 +23,6 @@
                             </asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
-<%--                    <asp:TemplateField HeaderText="Borrar">
-                        <ItemTemplate>
-                            <asp:LinkButton runat="server" CommandName="Select" CommandArgument='<%# Eval("ID") %>' CssClass="btn btn-outline-danger btn-sm">
-                                <i class="fa-solid fa-trash-can"></i>
-                                <span class="visually-hidden">Borrar</span>
-                            </asp:LinkButton>
-                        </ItemTemplate>
-                    </asp:TemplateField>--%>
                 </Columns>
             </asp:GridView>
         </div>
