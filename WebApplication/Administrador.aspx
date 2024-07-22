@@ -10,7 +10,7 @@
                 <h1>Administración</h1>
                 <a href="Usuarios.aspx" class="btn btn-dark btn-lg w-100 mb-3">Usuarios</a>
                 <a href="Pedidos.aspx" class="btn btn-dark btn-lg w-100 mb-3">Pedidos</a>
-                <a href="Articulos.aspx" class="btn btn-dark btn-lg w-100 mb-3">Artículos</a>
+                <a href="ArticulosAdmin.aspx" class="btn btn-dark btn-lg w-100 mb-3">Artículos</a>
                 <br />  
                 <br />  
                 <br />  
