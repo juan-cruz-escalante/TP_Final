@@ -50,7 +50,7 @@
         </div>
         <!-- Botón de agregar -->
         <div class="text-end mb-4">
-            <a href="No se como lo haras pero lo pense como un link" class="btn btn-success btn-lg">
+            <a href="FormularioArticulo.aspx" class="btn btn-success btn-lg">
                 <i class="fa-solid fa-plus"></i>
             </a>
         </div>

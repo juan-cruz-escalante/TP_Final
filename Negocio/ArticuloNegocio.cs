@@ -90,5 +90,29 @@ namespace Negocio
                 throw ex;
             }
         }
+        public void agregarconSP(Articulos art)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearProcedimiento("SP_Agregar");
+                datos.setearParametro("@Nombre", art.Nombre);
+                datos.setearParametro("@Descripcion", art.Descripcion);
+                datos.setearParametro("@IdCategoria", art.Categoria.Id);
+                datos.setearParametro("@IdMarca", art.Marca.Id);
+                datos.setearParametro("@Precio", art.Precio);
+                datos.setearParametro("@ImagenUrl", art.ImagenUrl);
+                datos.setearParametro("@Stock", art.Stock);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }

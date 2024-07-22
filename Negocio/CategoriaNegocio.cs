@@ -9,7 +9,7 @@ using Negocio;
 
 namespace Negocio
 {
-    internal class CategoriaNegocio
+    public class CategoriaNegocio
     {
         public List<Categoria> listar()
         {
