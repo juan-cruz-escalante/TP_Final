@@ -12,8 +12,8 @@ namespace Negocio
     {
         public List<Usuario> listar()
         {
-            List<Usuario> lista = new List<Usuario>();
             AccesoDatos datos = new AccesoDatos();
+            List<Usuario> lista = new List<Usuario>();
 
             try
             {
@@ -140,5 +140,41 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+
+public Usuario obtenerPorId(int id)
+{
+    AccesoDatos datos = new AccesoDatos();
+    Usuario usuario = null;
+
+    try
+    {
+        datos.setearConsulta("SELECT ID, Usuario, Pass, Apellidos, Nombres, Nacimiento, Adm, ImagenUrl FROM Usuarios WHERE ID = @id");
+        datos.setearParametro("@id", id);
+        datos.ejecutarLectura();
+
+        if (datos.Lector.Read())
+        {
+            usuario = new Usuario();
+            usuario.Id = (int)datos.Lector["ID"];
+            usuario.User = (string)datos.Lector["Usuario"];
+            usuario.Pass = (string)datos.Lector["Pass"];
+            usuario.Apellidos = datos.Lector["Apellidos"] == DBNull.Value ? string.Empty : (string)datos.Lector["Apellidos"];
+            usuario.Nombres = datos.Lector["Nombres"] == DBNull.Value ? string.Empty : (string)datos.Lector["Nombres"];
+            usuario.FechaNacimiento = datos.Lector["Nacimiento"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(datos.Lector["Nacimiento"]);
+            usuario.ImagenUrl = datos.Lector["ImagenUrl"] == DBNull.Value ? string.Empty : (string)datos.Lector["ImagenUrl"];
+            usuario.admin = (bool)datos.Lector["Adm"];
+        }
+    }
+    catch (Exception ex)
+    {
+        throw ex;
+    }
+    finally
+    {
+        datos.cerrarConexion();
+    }
+
+    return usuario;
+}
     }
 }

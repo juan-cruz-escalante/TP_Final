@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\administrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\administrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|solutionrelative:negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\webapplication\\usuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\usuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\carritodecompras.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\carritodecompras.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\webapplication\\editarusuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\editarusuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\webapplication\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\webapplication\\editarusuario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\editarusuario.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\miperfil.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\miperfil.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25A7CE49-89DF-48F5-A49E-7E1DAFBA3CEF}|Negocio\\Negocio.csproj|solutionrelative:negocio\\usuarionegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|c:\\users\\escal\\desktop\\backup tp_final - copia\\webapplication\\contenido\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\contenido\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\webapplication\\usuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{51FDD7A1-C3E4-42D8-81D0-069C18742F96}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\usuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,85 +54,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Administrador.aspx",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Administrador.aspx",
-              "RelativeDocumentMoniker": "WebApplication\\Administrador.aspx",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Administrador.aspx",
-              "RelativeToolTip": "WebApplication\\Administrador.aspx",
+              "DocumentIndex": 1,
+              "Title": "CarritoDeCompras.aspx",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\CarritoDeCompras.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\CarritoDeCompras.aspx",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\CarritoDeCompras.aspx",
+              "RelativeToolTip": "WebApplication\\CarritoDeCompras.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-21T19:27:42.532Z",
+              "WhenOpened": "2024-07-22T01:35:21.564Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MiPerfil.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\MiPerfil.aspx.cs",
-              "RelativeDocumentMoniker": "WebApplication\\MiPerfil.aspx.cs",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\MiPerfil.aspx.cs",
-              "RelativeToolTip": "WebApplication\\MiPerfil.aspx.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAkwCQAAAAVAAAA",
+              "DocumentIndex": 2,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Global.asax.cs",
+              "RelativeDocumentMoniker": "WebApplication\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Global.asax.cs",
+              "RelativeToolTip": "WebApplication\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAB4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T18:37:04.3Z",
+              "WhenOpened": "2024-07-22T01:34:23.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "estilo.css",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Contenido\\estilo.css",
-              "RelativeDocumentMoniker": "WebApplication\\Contenido\\estilo.css",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Contenido\\estilo.css",
-              "RelativeToolTip": "WebApplication\\Contenido\\estilo.css",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAAAHgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-21T18:04:15.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MasterPrincipal.Master",
-              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\MasterPrincipal.Master",
-              "RelativeDocumentMoniker": "WebApplication\\MasterPrincipal.Master",
-              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\MasterPrincipal.Master",
-              "RelativeToolTip": "WebApplication\\MasterPrincipal.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-21T16:22:58.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "UsuarioNegocio.cs",
               "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\Negocio\\UsuarioNegocio.cs",
               "RelativeDocumentMoniker": "Negocio\\UsuarioNegocio.cs",
               "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\Negocio\\UsuarioNegocio.cs",
               "RelativeToolTip": "Negocio\\UsuarioNegocio.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAcwHYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T16:11:35.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "EditarUsuario.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\EditarUsuario.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication\\EditarUsuario.aspx.cs",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\EditarUsuario.aspx.cs",
+              "RelativeToolTip": "WebApplication\\EditarUsuario.aspx.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAcwFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T22:38:26.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditarUsuario.aspx",
+              "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\EditarUsuario.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\EditarUsuario.aspx",
+              "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\EditarUsuario.aspx",
+              "RelativeToolTip": "WebApplication\\EditarUsuario.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-07-21T22:34:59.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Usuarios.aspx.cs",
               "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Usuarios.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Usuarios.aspx.cs",
               "ToolTip": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Usuarios.aspx.cs",
               "RelativeToolTip": "WebApplication\\Usuarios.aspx.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBkAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T16:10:18.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Usuarios.aspx",
               "DocumentMoniker": "C:\\Users\\escal\\Desktop\\BackUp TP_Final - copia\\WebApplication\\Usuarios.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Usuarios.aspx",

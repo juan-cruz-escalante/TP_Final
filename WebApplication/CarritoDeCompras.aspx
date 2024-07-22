@@ -110,7 +110,7 @@
 
     <script src="https://sdk.mercadopago.com/js/v2"></script>
     <script>
-        const mp = new MercadoPago('TEST-225d3c05-2356-46c7-9814-f115312ab0ab');
+        const mp = new MercadoPago('APP_USR-f7e97da9-6253-43c3-9411-793a44e51f20');
         
         function initializeCheckout(preferenceId) {
             if (preferenceId) {

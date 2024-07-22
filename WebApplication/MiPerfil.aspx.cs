@@ -68,6 +68,10 @@ namespace WebApplication
                 aux.FechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text);
 
                 negocio.Actualizar(aux);
+                // Opcional: Mostrar mensaje de éxito
+                lblMensaje.Text = "Usuario actualizado con éxito.";
+                lblMensaje.CssClass = "text-success";
+                lblMensaje.Visible = true;
 
                 // Actualizar la imagen en la página maestra
                 Image img = (Image)Master.FindControl("imgPerfil");
