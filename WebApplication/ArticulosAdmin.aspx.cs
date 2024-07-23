@@ -21,6 +21,7 @@ namespace WebApplication
                     ArticuloNegocio negocio = new ArticuloNegocio();
                     listaArticulos = negocio.listarConSP();
                     Session["listaArticulos"] = listaArticulos;
+
                 }
                 else
                 {
@@ -41,7 +42,31 @@ namespace WebApplication
         protected void dgvArticulos_SelectedIndexChanged(object sender, EventArgs e)
         {
             var id = dgvArticulos.SelectedDataKey.Value.ToString();
-            Response.Redirect("FormularioArticulo.aspx?ID=" + id);
+            Response.Redirect("EditarArticulo.aspx?ID=" + id);
+        }
+        protected string GetImageUrl(object imageUrlObj)
+        {
+            string imageUrl = imageUrlObj as string;
+            if (string.IsNullOrEmpty(imageUrl))
+            {
+                return ResolveUrl("https://asahimotors.com/images/nodisponible.png");
+            }
+            else
+            {
+                Uri uriResult;
+                bool result = Uri.TryCreate(imageUrl, UriKind.Absolute, out uriResult)
+                              && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
+
+                if (!result)
+                {
+                    // Si la URL no es accesible, devuelve la imagen de no disponible
+                    return ResolveUrl("https://asahimotors.com/images/nodisponible.png");
+                }
+                else
+                {
+                    return imageUrl;
+                }
+            }
         }
     }
 }

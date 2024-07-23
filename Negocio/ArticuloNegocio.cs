@@ -139,8 +139,8 @@ namespace Negocio
                     articulo.Categoria.Id = (int)datos.Lector["IDCategoria"];
                     articulo.Categoria.Nombre = (string)datos.Lector["Categoria"];
                     articulo.Precio = (float)(decimal)datos.Lector["Precio"];
-                    articulo.ImagenUrl = (string)datos.Lector["ImagenUrl"];
                     articulo.Stock = (int)datos.Lector["Stock"];
+                    articulo.ImagenUrl = (string)datos.Lector["ImagenUrl"];
                 }
             }
             catch (Exception ex)
@@ -172,6 +172,30 @@ namespace Negocio
             finally
             {
                 datos.cerrarConexion();
+            }
+        }
+
+        public bool ActualizarArt(Articulos articulo)
+        {
+            string consulta = "UPDATE Articulos SET Nombre = @nombre, Descripcion = @descripcion, IdCategoria = @categoriaId, IdMarca = @marcaId, Precio = @precio, ImagenUrl = @imagenUrl, Stock = @stock WHERE ID = @idArticulo";
+
+            using (SqlConnection conexion = new SqlConnection("server=.\\SQLLab3; database=TP_Final; integrated security=true"))
+            {
+                using (SqlCommand comando = new SqlCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("@nombre", articulo.Nombre);
+                    comando.Parameters.AddWithValue("@descripcion", articulo.Descripcion);
+                    comando.Parameters.AddWithValue("@categoriaId", articulo.Categoria.Id);
+                    comando.Parameters.AddWithValue("@marcaId", articulo.Marca.Id);
+                    comando.Parameters.AddWithValue("@precio", articulo.Precio);
+                    comando.Parameters.AddWithValue("@imagenUrl", articulo.ImagenUrl);
+                    comando.Parameters.AddWithValue("@stock", articulo.Stock);
+                    comando.Parameters.AddWithValue("@idArticulo", articulo.IdArticulo); // Suponiendo que IdArticulo es el campo clave primaria
+
+                    conexion.Open();
+                    int filasAfectadas = comando.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
             }
         }
     }

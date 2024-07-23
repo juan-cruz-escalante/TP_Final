@@ -140,7 +140,6 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
-
         public Usuario obtenerPorId(int id)
         {
             AccesoDatos datos = new AccesoDatos();

@@ -16,31 +16,31 @@
         </div>
         <!-- Tabla de artículos -->
         <div class="table-responsive">
-            <asp:GridView ID="dgvArticulos" DataKeyNames="IdArticulo" OnSelectedIndexChanged="dgvArticulos_SelectedIndexChanged" runat="server" AutoGenerateColumns="false" CssClass="table table-dark table-bordered">
-                <Columns>
-                    <asp:TemplateField HeaderText="Imagen">
-                        <ItemTemplate>
-                            <asp:Image runat="server" ImageUrl='<%# Eval("ImagenUrl") %>' AlternateText="Imagen del Artículo" Width="100px" Height="100px" />
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
-                    <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" />
-                    <asp:BoundField HeaderText="Categoria" DataField="Categoria" />
-                    <asp:BoundField HeaderText="Marca" DataField="Marca" />
-                    <asp:BoundField HeaderText="Precio" DataField="Precio" />
-                    <asp:BoundField HeaderText="Stock" DataField="Stock" />
-                    <asp:TemplateField HeaderText="Editar">
-                        <ItemTemplate>
-                            <asp:LinkButton runat="server" CommandName="Select" CommandArgument='<%# Eval("IdArticulo") %>' CssClass="btn btn-outline-primary btn-sm">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                                <span class="visually-hidden">Editar</span>
-                            </asp:LinkButton>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                </Columns>
-            </asp:GridView>
+<asp:GridView ID="dgvArticulos" DataKeyNames="IdArticulo" OnSelectedIndexChanged="dgvArticulos_SelectedIndexChanged" runat="server" AutoGenerateColumns="false" CssClass="table table-dark table-bordered">
+    <Columns>
+        <asp:TemplateField HeaderText="Imagen">
+            <ItemTemplate>
+                <asp:Image runat="server" ID="imgArticulo" ImageUrl='<%# GetImageUrl(Eval("ImagenUrl")) %>' AlternateText="Imagen del Artículo" Width="100px" Height="100px" />
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
+        <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" />
+        <asp:BoundField HeaderText="Categoria" DataField="Categoria" />
+        <asp:BoundField HeaderText="Marca" DataField="Marca" />
+        <asp:BoundField HeaderText="Precio" DataField="Precio" />
+        <asp:BoundField HeaderText="Stock" DataField="Stock" />
+        <asp:TemplateField HeaderText="Editar">
+            <ItemTemplate>
+                <asp:LinkButton runat="server" CommandName="Select" CommandArgument='<%# Eval("IdArticulo") %>' CssClass="btn btn-outline-primary btn-sm">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span class="visually-hidden">Editar</span>
+                </asp:LinkButton>
+            </ItemTemplate>
+        </asp:TemplateField>
+    </Columns>
+</asp:GridView>
         </div>
-        <!-- Botón de agregar -->
+
         <div class="text-end mb-4">
             <a href="FormularioArticulo.aspx" class="btn btn-success btn-lg">
                 <i class="fa-solid fa-plus"></i>

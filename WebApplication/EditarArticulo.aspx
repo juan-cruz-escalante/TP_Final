@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPrincipal.Master" AutoEventWireup="true" CodeBehind="FormularioArticulo.aspx.cs" Inherits="WebApplication.FormularioArticulo" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPrincipal.Master" AutoEventWireup="true" CodeBehind="EditarArticulo.aspx.cs" Inherits="WebApplication.EditarArticulo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -43,6 +42,15 @@
                         </div>
                         <div class="mb-3 form-floating">
                             <asp:Image ImageUrl="https://asahimotors.com/images/nodisponible.png" runat="server" ID="imgArticulo" Style="max-width: 100%; height: auto;" OnError="imgArticulo_LoadError" />
+                        </div>
+                        <asp:Button Text="Eliminar" ID="Button2" OnClick="btnEliminar_Click" CssClass="btn btn-danger float-end mb-3" runat="server" />
+                        <% if (ConfirmaEliminacion)
+                            { %>
+                        <div class="mb-3">
+                            <asp:CheckBox Text="Confirmar Eliminación" ID="chkConfirmaEliminacion" runat="server" />
+                            <asp:Button Text="Eliminar" ID="btnConfirmarEliminacion" OnClick="btnConfirmarEliminacion_Click" CssClass="btn btn-outline-danger" runat="server" />
+                        </div>
+                        <% } %>
                     </ContentTemplate>
                 </asp:UpdatePanel>
             </div>
