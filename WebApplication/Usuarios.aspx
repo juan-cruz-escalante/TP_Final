@@ -27,7 +27,7 @@
             </asp:GridView>
         </div>
         <div class="text-end mb-4">
-            <a href="No se como lo haras pero lo pense como un link" class="btn btn-success btn-lg">
+            <a href="AgregarUsuario.aspx" class="btn btn-success btn-lg">
                 <i class="fa-solid fa-user-plus"></i> 
             </a>
         </div>

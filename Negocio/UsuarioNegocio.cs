@@ -195,5 +195,56 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+        public void agregar(Usuario nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("INSERT INTO Usuarios(Usuario, Pass, Nombres, Apellidos, Nacimiento, ImagenUrl) VALUES (@usuario, @pass, @nombres, @apellidos, @nacimiento, @imagenUrl)");
+                datos.setearParametro("@usuario", nuevo.User);
+                datos.setearParametro("@pass", nuevo.Pass);
+                datos.setearParametro("@nombres", nuevo.Nombres);
+                datos.setearParametro("@apellidos", nuevo.Apellidos);
+                datos.setearParametro("@nacimiento", nuevo.FechaNacimiento);
+                datos.setearParametro("@imagenUrl", nuevo.ImagenUrl);
+
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public int obtenerUltimoIdArticulos()
+        {
+            AccesoDatos datos = new AccesoDatos();
+            datos.setearConsulta("select ID from Usuarios");
+            int id = 0;
+            try
+            {
+                datos.ejecutarLectura();
+                while (datos.Lector.Read())
+                {
+                    id = (int)datos.Lector["ID"];
+                }
+                return id;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }

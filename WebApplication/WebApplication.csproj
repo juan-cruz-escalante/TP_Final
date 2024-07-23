@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administrador.aspx" />
+    <Content Include="AgregarUsuario.aspx" />
     <Content Include="ArticulosAdmin.aspx" />
     <Content Include="CarritoDeCompras.aspx" />
     <Content Include="Contenido\estilo.css" />
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="Administrador.aspx.designer.cs">
       <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarUsuario.aspx.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuario.aspx.designer.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="ArticulosAdmin.aspx.cs">
       <DependentUpon>ArticulosAdmin.aspx</DependentUpon>
